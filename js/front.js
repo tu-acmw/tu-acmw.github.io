@@ -8,6 +8,7 @@ $(function () {
 
 });
 
+
 /* for demo purpose only - can be deleted */
 
 function demo() {
@@ -372,4 +373,9 @@ $(window).resize(function () {
         windowWidth = newWindowWidth;
     }
 
+});
+
+//scroll up by 100px when jumping to link/anchor from navbar
+window.addEventListener("hashchange", function () {
+    window.scrollTo(window.scrollX, window.scrollY - 100);
 });

@@ -129,11 +129,24 @@ section.section--no-padding {
 .heading:after {
   content: " ";
   display: block;
-  width: 40px;
-  height: 1px;
+  width: 60px;
+  height: 2px;
   margin: 10px 0 20px;
   background: #b70000;
 }
+
+.heading2 {
+  margin-bottom: 20px;
+}
+.heading2:after {
+  content: " ";
+  display: block;
+  width: 60px;
+  height: 2px;
+  margin: 10px 495px 20px;
+  background: #b70000;
+}
+
 .img-responsive {
   margin: 0 auto;
 }
@@ -446,13 +459,14 @@ p.social.social--big i {
 }
 /* jumbotron */
 .main-jumbotron {
+  height: 99%;	
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
   color: #fff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   text-align: center;
-  background: url('../img/jumbotron1.jpg') center center no-repeat;
+  background-color: #b70000;
   background-size: cover;
 }
 .main-jumbotron .content {

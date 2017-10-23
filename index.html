@@ -25,7 +25,7 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
-	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<body data-spy="scroll" data-target=".navbar" data-offset="300">
     <!-- navbar-->
     <header class="header">
       <div role="navigation" class="navbar navbar-default">
@@ -38,12 +38,13 @@
           </div>
           <div id="navigation" class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#about">About us</a></li>
+			  <li class="active"><a href="#home">Home</a></li>
+              <li><a href="#about">About us</a></li>
               <li><a href="#events">Events</a></li>
 			  <li><a href="#boardMembers">Board Members</a></li>             
 			  <li><a href="#signup">Sign Up</a></li>        
               <li><a href="#contact">Contact</a></li>
-			  </ul>
+			</ul>
             <!--
 			</ul><a href="#" data-toggle="modal" data-target="#login-modal" class="btn navbar-btn btn-ghost"><i class="fa fa-sign-in"></i>Log in</a>
 			-->
@@ -81,23 +82,31 @@
     </div>
     <!-- *** LOGIN MODAL END ***-->
 	
+	
+	<!-- Home -->
     <div class="jumbotron main-jumbotron">
       <div class="container">
-        <div class="content">
-          <h1 id="about">About us</h1>
-          <p class="margin-bottom">
-		  We are Temple University’s ACM-W chapter. <br><br>
-		  Our organization’s purpose is to open the doors of technology to women of all ages. We are here to help women in the field succeed and to increase awareness of the woman's role in technological fields with emphasis on computing and machinery.
-
-			<br><br>
-			This year we are focusing on building a community in technology at Temple University. Through homework nights, mentorship opportunities, workshops, discussions, networking events, career panels and team activities we hope to create meaningful connections with other women in our department and bring understanding about different careers in technology. 
-
-		  </p>
-          <p><a class="btn btn-white">Learn more</a></p>
+        <div class="content" style="margin-top: 280px;">
+          <h1 id="home">Temple University's ACM-W</h1>       
+          <p><a class="btn btn-white" href="#about">Learn more</a></p>
         </div>
       </div>
     </div>
     	
+	<!-- About us -->
+	<section>
+      <div class="container" style=text-align:center;>  		 
+          <h1 id="about" class="heading2">About us</h1>
+          <p class="lead">
+			We are Temple University’s ACM-W chapter. <br><br>
+			Our organization’s purpose is to open the doors of technology to women of all ages. We are here to help women in the field succeed and to increase awareness of the woman's 
+			role in technological fields with emphasis on computing and machinery.
+			<br><br>
+			This year we are focusing on building a community in technology at Temple University. Through homework nights, mentorship opportunities, workshops, discussions, networking events, 
+			career panels and team activities we hope to create meaningful connections with other women in our department and bring understanding about different careers in technology. 
+		  </p>
+		</div>
+    </section>	
 	
     <!-- events & meetings-->
     <section id="events" class="background-gray-lightest">
@@ -140,12 +149,12 @@
           </div>
         </div>
       </div>
-    </section>	
+    </section>		
 	
-	
-<div class="container">
-	    <section>
-		<h1 id="boardMembers">Board Members</h1>
+	<!-- Board Members -->
+	<section>
+	<div class="container">
+	  <h1 id="boardMembers" class="heading">Board Members</h1>
       <div class="container">
         <div class="row">
           <div class="col-sm-4">
@@ -186,24 +195,26 @@
 	</div>
     </section>
 	
-	
+	<!-- Sign Up -->
 	<section>
       <div class="container">  
-	  <div class="col-md-4 col-sm-12">
-              <h4 id="signup" class="heading">Sign Up</h4>
-              <p>Sign up to get news & updates from us!</p>
-              <form class="footer__newsletter">
-                <div class="input-group">
-                  <input type="text" placeholder="Enter your email address" class="form-control"><span class="input-group-btn">
-                    <button type="button" class="btn btn-default"><i class="fa fa-send"></i></button></span>
-                </div>
-              </form>
-            </div>
+		  <div class="col-md-4 col-sm-12">
+			<h4 id="signup" class="heading">Sign Up</h4>
+			<p>Sign up to get news & updates from us!</p>
+			<form class="footer__newsletter">
+			<div class="input-group">
+				<input type="text" placeholder="Enter your email address" class="form-control"><span class="input-group-btn">
+				<button type="button" class="btn btn-default"><i class="fa fa-send"></i></button></span>
+			</div>
+			</form>
+			</div>
+		</div>
     </section>
-
 	
+	<!-- Contact -->
+	<section>
 	<div id="contact">
-<div class="container">
+		<div class="container">
             <div class="icon"><i class="pe-7s-pen"></i></div>
             <h4 class="heading margin-bottom">Contact form</h4>
             <p class="text-muted">Send us ways we can improve, suggestions for meetings or ideas for events</p>
@@ -246,15 +257,14 @@
             </form>
           </div>
 	</div>
-	
-	
-	
+	</section>
+		
     <!--  clearfix -->
     <section>
       <div class="container clearfix"></div>
     </section>
-
 	
+	<!-- Social Media -->
     <footer class="footer">
       <div class="footer__block">
         <div class="container">        

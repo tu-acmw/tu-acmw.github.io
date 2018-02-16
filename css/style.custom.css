@@ -117,7 +117,7 @@ section {
 }
 section.section--little-padding {
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   background-color: #3374dd;
 }
 .italic {
@@ -999,6 +999,15 @@ FOOTER AND COPYRIGHT
 }
 .footer__copyright p.credit a:hover {
   border-bottom-color: #ccc;
+}
+
+.footer__newsletter #message{
+	margin-top: 3%;
+	font-weight: bold;
+	color: #19c433;
+}
+.hidden{
+	visibility: hidden;
 }
 @media (max-width: 991px) {
   .footer__copyright p.credit {

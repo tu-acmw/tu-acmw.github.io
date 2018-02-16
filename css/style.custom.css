@@ -1,10 +1,10 @@
-/* 
-========================================= 
-========================================= 
+/*
+=========================================
+=========================================
 
-Multi template By Bootstrapious.com     
+Multi template By Bootstrapious.com
 
-========================================= 
+=========================================
 ========================================= */
 /* variant 4 - red */
 /*
@@ -21,7 +21,7 @@ NAVBAR
 #navbar-fixed {
 	width: 100%;
 	position: fixed;
-	background-color: #ffffff; 
+	background-color: #ffffff;
 	z-index: 9; /* make navbar overlap content */
 }
 
@@ -85,21 +85,18 @@ html {
   height: 100%;
 }
 body {
-  height: 100%;
+	text-align: center;
+	height: 100%;
 }
 header {
   z-index: 1000;
 }
 section {
   position: relative;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-section.section--little-padding {
-  padding-top: 20px;
-  padding-bottom: 25px;
-  background-color: #3374dd;
-}
+
 .italic {
   font-style: italic;
   font-family: "Georgia", "Times New Roman", Times, serif;
@@ -107,25 +104,9 @@ section.section--little-padding {
 .heading {
   margin-bottom: 20px;
 }
-.heading:after {
-  content: " ";
-  display: block;
-  width: 60px;
-  height: 2px;
-  margin: 10px 0 20px;
-  background: #b70000;
-}
 
 .heading2 {
   margin-bottom: 20px;
-}
-.heading2:after {
-  content: " ";
-  display: block;
-  width: 60px;
-  height: 2px;
-  margin: 10px 495px 20px;
-  background: #b70000;
 }
 
 .img-responsive {
@@ -330,8 +311,8 @@ p.social a {
   font-size: 15px;
   text-align: center;
   vertical-align: bottom;
-  border: solid 1px #999999;
-  color: #999999;
+  border: solid 1px white;
+  color: white;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -391,7 +372,9 @@ p.social.social--big i {
 }
 /* jumbotron */
 .main-jumbotron {
-  height: 93%;	
+  height: 100%;
+  display: flex;
+  align-items: center;
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -800,8 +783,8 @@ FOOTER AND COPYRIGHT
   border-bottom-color: #ccc;
 }
 
-.footer__newsletter #message{
-	margin-top: 10px;
+#message{
+	padding-top: 15px;
 	font-weight: bold;
 	color: #19c433;
 }
@@ -1373,6 +1356,9 @@ fieldset[disabled] .btn-transparent.active {
 /* forms.less */
 label {
   font-weight: normal;
+}
+.input-group{
+	width: 30%;
 }
 .form-control {
   display: block;

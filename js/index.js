@@ -1,17 +1,14 @@
-/*
+$(document).ready(function(){
+
 var emailText = document.getElementById("emailText");
 var emailSubmitBtn = document.getElementById("emailSubmitBtn");
 
-function emailSubmitClick(){
-	var firebaseRef = firebase.database().ref();
-	
-	firebaseRef.child("Text").set(emailText.value);
-	
-}
-*/
+var firebaseRef = firebase.database().ref("EmailList");
 
-$(document).ready(function(){
+function emailSubmitClick(){
 	
-	var rootRef = firebase.database().ref().child("EmailList");
+	firebaseRef.push(emailText.value);
 	
+}	
+		
 });

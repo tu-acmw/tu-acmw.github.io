@@ -24,5 +24,9 @@ $(document).ready(function(){
 	    return (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) && mail.length <=254;
 	}
 	
+	$("#contactLink").click(function(){
+         document.location.href = "mailto:xyz@something.com";
+     });
+	
 });
 

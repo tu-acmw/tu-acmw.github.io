@@ -1229,6 +1229,7 @@ hr {
   border-radius: 0;
 }
 .btn-primary {
+  margin-top: 12px;
   color: #b70000;
   background-color: #ffffff;
   border-color: #b70000;

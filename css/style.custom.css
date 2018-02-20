@@ -197,6 +197,9 @@ a:hover {
   height: 600px;
 }
 
+.btn-default{
+	margin-top: 42px;
+}
 .btn-white {
   color: #ffffff;
   background-color: transparent;

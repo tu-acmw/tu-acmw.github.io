@@ -10,12 +10,12 @@ $(document).ready(function(){
 	emailSubmitClick = function(){	
 		message.className= ""; //remove hidden class & show message	
 
-		if(ValidateEmail(emailText.value) && nameText.value != ""){
+		if(ValidateEmail(emailText.value) && ValidateName(nameText.value)){
 			firebaseRef.child(nameText.value).set({Email: emailText.value});
 			message.innerHTML= "Success!";
 			message.style.color= "#19c433";			
 		}
-		else if(nameText.value == ""){
+		else if(nameText.value == "" || nameText.value.length >40){
 			message.innerHTML= "Please enter your name";
 			message.style.color= "red";	
 		}
@@ -27,6 +27,10 @@ $(document).ready(function(){
 	
 	function ValidateEmail(mail) {
 	    return (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) && mail.length <=254;
+	}
+	
+	function ValidateName(name) {
+	    return name.value != "" && name.length <=40;
 	}
 	
 	$("#contactLink").click(function(){

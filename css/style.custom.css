@@ -1641,7 +1641,7 @@ address {
 }
 .panel-default > .panel-heading {
   color: #333333;
-  background-color: #ffffff;
+  background-color: #D3D3D3;
   border-color: #666666;
 }
 .panel-default > .panel-heading + .panel-collapse .panel-body {

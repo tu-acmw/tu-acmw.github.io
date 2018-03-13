@@ -20,9 +20,10 @@ NAVBAR
 
 #navbar-fixed {
 	width: 100%;
+	min-height: 55px;
 	position: fixed;
 	background-color: #ffffff;
-	z-index: 9; /* make navbar overlap content */
+	z-index: 999; /* make navbar overlap content */
 }
 
 .navbar {
@@ -42,10 +43,13 @@ NAVBAR
 .navbar .navbar-nav > li > a {
   font-weight: bold;
 }
+
+/*navbar li padding*/
 @media (min-width: 768px) {
   .navbar ul.nav > li > a {
     border-top: solid 2px transparent;
-    padding-top: 17.5px;
+    padding-top: 18px;
+    padding-bottom: 15px;
   }
   .navbar ul.nav > li > a:hover,
   .navbar ul.nav > li > a:focus {
@@ -305,17 +309,14 @@ p.social {
 }
 p.social a {
   margin: 0 10px 10px 0;
-  color: #fff;
   display: inline-block;
-  width: 40px;
+  width: 30px;
   height: 40px;
-  border-radius: 20px;
   line-height: 40px;
   font-size: 15px;
   text-align: center;
   vertical-align: bottom;
-  border: solid 1px white;
-  color: white;
+  color: #3374dd; /*social icon color*/
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -329,47 +330,23 @@ p.social a {
              */
 }
 p.social a:hover {
+  border-bottom: solid 0px #000;
+  text-decoration: none;
   color: #b70000;
-  border-color: #b70000;
 }
+
 p.social a i {
   vertical-align: bottom;
   line-height: 40px;
 }
-p.social.social--outline a {
-  background: transparent;
-}
-p.social.social--outline a.facebook {
-  color: #4460ae;
-  border-color: #4460ae;
-}
-p.social.social--outline a.gplus {
-  color: #c21f25;
-  border-color: #c21f25;
-}
-p.social.social--outline a.twitter {
-  color: #3cf;
-  border-color: #3cf;
-}
-p.social.social--outline a.instagram {
-  color: #cd4378;
-  border-color: #cd4378;
-}
-p.social.social--outline a.email {
-  color: #4a7f45;
-  border-color: #4a7f45;
-}
-p.social.social--outline a.link {
-  color: #871AFF;
-  border-color: #871AFF;
-}
+
 p.social.social--big a {
-  width: 50px;
+  width: 40px;
   height: 50px;
-  border-radius: 25px;
   line-height: 50px;
   font-size: 20px;
 }
+
 p.social.social--big i {
   line-height: 50px;
 }
@@ -877,7 +854,7 @@ FOOTER AND COPYRIGHT
 /* navbar */
 .navbar {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  min-height: 60px;
+  min-height: 55px;
   margin-bottom: 0;
   border-top: none;
   border-bottom: none;
@@ -944,10 +921,10 @@ FOOTER AND COPYRIGHT
 }
 .navbar-brand {
   float: left;
-  padding: 19.5px 15px;
+  padding-top: 15px;
   font-size: 18px;
   line-height: 21px;
-  height: 60px;
+
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -968,9 +945,9 @@ FOOTER AND COPYRIGHT
   margin: 9.75px -15px;
 }
 .navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  line-height: 21px;
+  padding-top: 8.5px;
+  padding-bottom: 8.5px;
+  line-height: 18px;
   border-bottom: none;
 }
 .navbar-nav > li > a:hover,
@@ -983,7 +960,7 @@ FOOTER AND COPYRIGHT
     padding: 5px 15px 5px 25px;
   }
   .navbar-nav .open .dropdown-menu > li > a {
-    line-height: 21px;
+    line-height: 18px;
   }
   .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -1228,13 +1205,13 @@ hr {
   letter-spacing: 0.1em;
   padding: 6px 12px;
   font-size: 14px;
-  line-height: 1.55;
+  line-height: 1.50;
   border-radius: 0;
 }
 .btn-primary {
-  margin-top: 12px;
+  margin-top: 9px;
   color: #b70000;
-  background-color: #ffffff;
+  background-color: transparent;
   border-color: #b70000;
 }
 .btn-primary:hover,
@@ -1281,6 +1258,7 @@ fieldset[disabled] .btn-primary.active {
   color: #ffffff;
   border: solid 1px #b70000;
 }
+
 .btn-transparent {
   color: #555555;
   background-color: transparent;

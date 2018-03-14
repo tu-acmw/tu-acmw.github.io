@@ -18,6 +18,12 @@ NAVBAR
   width: 100%;
 }
 
+.container-md{
+  overflow: hidden;
+  background-color: white;
+  border-radius: 6px;
+}
+
 #navbar-fixed {
 	width: 100%;
 	min-height: 55px;
@@ -107,6 +113,10 @@ section {
 }
 .heading {
   margin-bottom: 20px;
+}
+
+.heading-white{
+  color: white;
 }
 
 .heading2 {
@@ -1340,7 +1350,8 @@ label {
   font-weight: normal;
 }
 .input-group{
-	width: 30%;
+	min-width: 210px;
+	max-width: 310px;
 }
 .form-control {
   display: block;
@@ -1545,9 +1556,11 @@ p {
   margin: 0 0 21px;
 }
 .lead {
-  margin-bottom: 21px;
+  margin-top: 15px;
+  margin-bottom: 16px;
   font-size: 16px;
 }
+
 @media (min-width: 768px) {
   .lead {
     font-size: 21px;
@@ -1556,6 +1569,11 @@ p {
 .text-small {
   font-size: 12px;
 }
+
+.text-md{
+  font-size: 15px;
+}
+
 .text-large {
   font-size: 18px;
 }

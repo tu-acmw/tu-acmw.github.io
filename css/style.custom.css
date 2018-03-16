@@ -18,10 +18,17 @@ NAVBAR
   width: 100%;
 }
 
-.container-md{
-  overflow: hidden;
-  background-color: white;
-  border-radius: 6px;
+.row{ /* center the images under 'events'*/
+	display: flex; 
+	justify-content: center; 
+	flex-wrap:wrap;	
+}
+
+.container-events{
+	overflow: hidden;	
+	background-color: white;
+	border-radius: 6px;
+	margin-bottom: 30px;
 }
 
 #navbar-fixed {

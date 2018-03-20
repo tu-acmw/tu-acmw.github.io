@@ -25,7 +25,7 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
-	<body data-spy="scroll" data-target=".navbar" data-offset="300" style="background-color: #2E69C9">
+	<body data-spy="scroll" data-target=".navbar" data-offset="300" style="background-color: #2E69C9;">
     <!-- navbar-->
     <header class="header">
       <div role="navigation" class="navbar navbar-default">
@@ -41,7 +41,13 @@
             <ul class="nav navbar-nav navbar-right">
 			  <li><a href="index.html">Home</a></li>
               <li><a href="index.html#about">About</a></li>
-              <li class="active"><a href="index.html#events">Events</a></li>
+              <li class="dropdown active"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Events <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="index.html#events">2018-Present</a></li>
+                  <li class="active"><a href="#events">2017-2018</a></li>
+                  <li><a href="events_2016.html">2016</a></li>
+                </ul>
+              </li>
 			  <li><a href="index.html#boardMembers">Board Members</a></li>
 			  <li><a href="index.html#faq">FAQ</a></li>
 			  <li><a href="index.html#signup">Sign Up</a></li>
@@ -57,11 +63,11 @@
 	
 	<section style="background-color: #2E69C9">
 		<div class="container">
-		  <h1 class="heading-white"> 2018-2017 Events</h1>
+		  <h1 class="heading-white"> 2017-2018 Events</h1>
 		
 			<div class="row">
 			  <!-- February 2017 -->
-			 <div class="col-md-6">
+			 <div class="col-md-5">
 			   <h3 class="heading-white">February 2018</h3>
 				<div class="container-events">
 				   <div class="image"><img src="img/events/2018/1.2.18_femmehacks.png" alt="" class="img-responsive"></div>
@@ -71,7 +77,7 @@
 				</div>
 			 </div>
 			 <!-- January 2017 -->
-			 <div class="col-md-6">
+			 <div class="col-md-5">
 			   <h3 class="heading-white">January 2018</h3>
 				<div class="container-events">
 				   <div class="image"><img src="img/events/2018/1.29.18_general_body_meeting.jpg" alt="" class="img-responsive"></div>
@@ -81,11 +87,10 @@
 				</div>
 				</div>
 			 </div>
-		  </div>
 		  <!-- November 2017 -->
 		  <h3 class="heading-white">November 2017</h3>
 		  <div class="row">
-			 <div class="col-md-4">
+			 <div class="col-md-5">
 				<div class="container-events">
 				   <div class="image"><img src="img/events/2017/11.06.17_movie_night.jpg" alt="" class="img-responsive"></div>
 				   <h4 class="lead">Movie Night</h4>
@@ -93,7 +98,7 @@
 				      Where: SERC 358<br></p>
 				</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-5">
 				  <div class="container-events">
 				   <div class="image"><img src="img/events/2017/11.27.17_hw_night.jpg" alt="" class="img-responsive"></div>
 				</div>
@@ -110,7 +115,7 @@
       <!-- September 2017 -->
       <h3 class="heading-white"><br>September 2017</h3>
       <div class="row">
-			 <div class="col-md-4">
+			 <div class="col-md-5">
 				<div class="container-events">
 				   <div class="image"><img src="img/events/2017/9.25.17_general_election.jpg" alt="" class="img-responsive"></div>
 				   <h4 class="lead">General Elections</h4>
@@ -118,7 +123,7 @@
 				      Where: SERC 358<br></p>
 				</div>
 			 </div>
-			 <div class="col-md-4">
+			 <div class="col-md-5">
 				<div class="container-events">
 				   <div class="image"><img src="img/events/2017/9.18.17_general_body_meeting.jpg" alt="" class="img-responsive"></div>
 				   <h4 class="lead">Second General Body Meeting</h4>
@@ -128,7 +133,7 @@
 			 </div>
 		  </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-5">
 		     <div class="container-events">
 		        <div class="image"><img src="img/events/2017/9.05.17_general_body_meeting.jpg" alt="" class="img-responsive"></div>
 		        <h4 class="lead">First General Body Meeting</h4>
@@ -137,7 +142,7 @@
 		      </div>
 		  </div>
 		  <!-- February 2017 -->
-			 <div class="col-md-4">
+			 <div class="col-md-5">
 			   <h3 class="heading-white"><br>February 2017</h3>
 				<div class="container-events">
 				   <div class="image"><img src="img/events/2017/2.20.17_femmehacks.jpg" alt="" class="img-responsive"></div>
@@ -148,7 +153,7 @@
 			 </div>
 		  </div>
 		  <label class="text-small"><a href="events_2016.html" class="btn btn-white">2016 Events</a></label>
-      
+      </div>
 	</section>
 	
 	

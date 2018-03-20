@@ -40,9 +40,7 @@ $(document).ready(function(){
 });
 
 //collapse mobile menu when link is clicked
-$(document).on('click', '.navbar-collapse.in', function(e) {
-  if($(e.target).is('a')){
-    $(this).collapse('hide');}
+$('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
+    $('.navbar-toggle:visible').click();
 });
-
 

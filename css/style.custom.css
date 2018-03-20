@@ -18,6 +18,10 @@ NAVBAR
   width: 100%;
 }
 
+[data-toggle~="collapse"] {
+    cursor: pointer;
+}
+
 .profile{
 	overflow: hidden;
   width: 150px;

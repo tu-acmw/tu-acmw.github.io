@@ -23,7 +23,7 @@ NAVBAR
 }
 
 .profile{
-	overflow: hidden;
+	overflow: hidden;	
   width: 150px;
   height: 150px;
   border-radius: 50%; 
@@ -124,8 +124,8 @@ header {
 }
 section {
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 45px;
 }
 
 .italic {
@@ -335,6 +335,7 @@ SOCIAL LINKS
 .contact-form {
   margin-bottom: 20px;
 }
+
 p.social {
 }
 p.social a {

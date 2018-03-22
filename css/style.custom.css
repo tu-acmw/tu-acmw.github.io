@@ -23,7 +23,9 @@ NAVBAR
 }
 
 .bg-color{
-	background-color: #3d69a2;
+	  background-color: #3d69a2;
+	background: linear-gradient(45deg, #162f4c, #538fde);
+	filter: contrast(1.2);
 }
 
 .profile{

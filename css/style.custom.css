@@ -29,7 +29,7 @@ NAVBAR
 }
 
 .profile{
-	overflow: hidden;	
+  overflow: hidden;	
   width: 150px;
   height: 150px;
   border-radius: 50%; 
@@ -49,14 +49,6 @@ NAVBAR
 	background-color: white;
 	border-radius: 6px;
 	margin-bottom: 30px;
-}
-
-#navbar-fixed {
-	width: 100%;
-	min-height: 55px;
-	position: fixed;
-	background-color: #ffffff;
-	z-index: 999; /* make navbar overlap content */
 }
 
 .navbar {
@@ -238,9 +230,6 @@ a:hover {
   height: 600px;
 }
 
-.btn-default{
-	margin-top: 42px;
-}
 .btn-white {
   color: #ffffff;
   background-color: transparent;
@@ -1395,8 +1384,9 @@ label {
 }
 .input-group{
 	min-width: 210px;
-	max-width: 310px;
+	max-width: 410px;
 }
+
 .form-control {
   display: block;
   width: 100%;
@@ -1412,6 +1402,7 @@ label {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
 .form-control::-moz-placeholder {
   color: #999999;
   opacity: 1;

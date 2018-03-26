@@ -28,8 +28,7 @@
 	<body data-spy="scroll" data-target=".navbar" data-offset="300">
     <!-- navbar-->
     <header class="header">
-      <div role="navigation" class="navbar navbar-default">
-	  <div id="navbar-fixed">
+      <div role="navigation" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="navbar-header"><a href="#" class="navbar-brand">ACM-W</a>
             <div class="navbar-buttons">
@@ -56,7 +55,6 @@
               </li>
 			</ul>
 		  </div>
-        </div>
 		</div>
       </div>
     </header>
@@ -66,7 +64,6 @@
       <div class="container">
         <div class="content">
           <img src="img/acmw_logo.png" class="img-responsive">
-          <p><a class="btn btn-white" href="#about">Learn more</a></p>
         </div>
       </div>
     </div>
@@ -160,8 +157,8 @@
 	<div class="container">
 	  <h1 id="boardMembers" class="heading">Board Members</h1><br>
       <div class="container">
-        <div class="row">
-          
+        
+		<div class="row">         
           <div class="col-sm-2">
               <div class="profile"><img src="img/profile/sharonie.png" alt="" class="img-responsive"></div>
               <h4>Sharon GreenBlatt</h4>
@@ -169,10 +166,10 @@
 			  data-animate-hover="pulse"><i class="fa fa-linkedin-square"></i></a></p>
 		  </div>
           
-          <div class="col-sm-2">
-              <div class="profile"><img src="img/profile/morgan.jpg" alt="" class="img-responsive"></div>
+		  <div class="col-sm-2">
+             <div class="profile"><img src="img/profile/morgan.jpg" alt="" class="img-responsive"></div>
               <h4>Morgan Brokenborough</h4>
-			  <p class="social social--small">Co-President <a href="https://www.linkedin.com/in/morgan-brokenborough-b7968a108/" 
+			  <p class="social social--small">Co-President<a href="https://www.linkedin.com/in/morgan-brokenborough-b7968a108/" 
 			  data-animate-hover="pulse"><i class="fa fa-linkedin-square"></i></a></p>
 		  </div>
           
@@ -216,8 +213,7 @@
               <div class="profile"><img src="img/profile/maryam.png" alt="" class="img-responsive"></div>
               <h4>Maryam Salawu</h4>
 			  <p class="social social--small">Secretary</p>
-		  </div>
-		  
+		  </div>	  
 		  </div>
 		  
 		  <div class="row">
@@ -332,16 +328,31 @@
 	
 	<!-- Sign Up -->
 	<section>
-	   <div class="container">
+	   
 		  <h3 id="signup" class="heading">Sign Up</h3>
 		  <p class="text-md">Sign up to get news & updates from us!</p>
-		  <div class="input-group container">
-			 <input id="nameText" type="text" placeholder="Enter your name" class="form-control"><br><br>
-			 <input id="emailText" type="text" placeholder="Enter your email address" class="form-control">
-			 <span class="input-group-btn">
-			 <button id="emailSubmitBtn" type="button" class="btn btn-default" onclick="emailSubmitClick()"><i class="fa fa-send"></i></button>
-			 </span>
-		  </div>
+		 
+		 <div class="input-group container">  
+		<div class="row" style="padding-bottom: 5px">
+		   <div class="col-sm-6">
+			  <div class="form-group">
+				 <input id="firstName" type="text" placeholder="First name" class="form-control">
+			  </div>
+		   </div>
+		   <div class="col-sm-6" style="padding-left: 0px">
+			  <div class="form-group">
+				 <input id="lastName" type="text" placeholder="Last name" class="form-control">
+			  </div>
+		   </div>
+		</div>
+		<div class="input-group">
+		   <input id="emailText" type="text" placeholder="Enter your email address" class="form-control">
+		   <span class="input-group-btn">
+		   <button id="emailSubmitBtn" type="button" class="btn btn-default" onclick="emailSubmitClick()">
+		   <i class="fa fa-send"></i></button>
+		   </span>
+		</div>
+             	
 		  <label id="message" class="hidden">Success!</label>
 	   </div>
 	</section>

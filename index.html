@@ -310,7 +310,7 @@
 			 <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question5">
 				<h4 class="panel-title">
 				   <label style="color: red"> <b>&gt;</b> </label>
-				   <label>What is your relationship with ACM?</label>
+				   <label>What's your relationship with ACM?</label>
 				</h4>
 			 </div>
 			 <div id="question5" class="panel-collapse collapse" style="height: 0px;">
@@ -328,33 +328,31 @@
 	
 	<!-- Sign Up -->
 	<section>
-	   
-		  <h3 id="signup" class="heading">Sign Up</h3>
-		  <p class="text-md">Sign up to get news & updates from us!</p>
-		 
-		 <div class="input-group container">  
-		<div class="row" style="padding-bottom: 5px">
-		   <div class="col-sm-6">
-			  <div class="form-group">
-				 <input id="firstName" type="text" placeholder="First name" class="form-control">
+		<h3 id="signup" class="heading">Sign Up</h3>
+		<p class="text-md">Sign up to get news & updates from us!</p>
+		
+		<div class="input-name container">
+		   <div class="row">
+			  <div class="col-sm-6" style="padding-left: 0px">
+				 <div class="form-group">
+					<input id="firstName" type="text" placeholder="First name" class="form-control">
+				 </div>
 			  </div>
-		   </div>
-		   <div class="col-sm-6" style="padding-left: 0px">
-			  <div class="form-group">
-				 <input id="lastName" type="text" placeholder="Last name" class="form-control">
+			  <div class="col-sm-6" style="padding-left: 0px">
+				 <div class="form-group">
+					<input id="lastName" type="text" placeholder="Last name" class="form-control">
+				 </div>
 			  </div>
+			  <div class="input-group">
+				 <input id="emailText" type="text" placeholder="Enter your email address" class="form-control">
+				 <span class="input-group-btn">
+				 <button id="emailSubmitBtn" type="button" class="btn btn-default" onclick="emailSubmitClick()">
+				 <i class="fa fa-send"></i></button>
+				 </span>		
+			  </div>
+			  <label id="message" class="hidden">Success!</label>
 		   </div>
 		</div>
-		<div class="input-group">
-		   <input id="emailText" type="text" placeholder="Enter your email address" class="form-control">
-		   <span class="input-group-btn">
-		   <button id="emailSubmitBtn" type="button" class="btn btn-default" onclick="emailSubmitClick()">
-		   <i class="fa fa-send"></i></button>
-		   </span>
-		</div>
-             	
-		  <label id="message" class="hidden">Success!</label>
-	   </div>
 	</section>
 	
     <!--  clearfix -->

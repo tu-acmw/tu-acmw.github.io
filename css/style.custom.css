@@ -39,8 +39,8 @@ NAVBAR
 
 .profile{
   overflow: hidden;	
-  width: 150px;
-  height: 150px;
+  max-width: 165px;
+  max-height: 165px;
   border-radius: 50%; 
   background-image: url("path/to/image");
   background-position: center center;

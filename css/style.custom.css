@@ -38,10 +38,10 @@ NAVBAR
 }
 
 .profile{
-  overflow: hidden;	
+  overflow: hidden;
   max-width: 165px;
   max-height: 165px;
-  border-radius: 50%; 
+  border-radius: 50%;
   background-image: url("path/to/image");
   background-position: center center;
   background-size: cover;
@@ -961,12 +961,18 @@ FOOTER AND COPYRIGHT
   padding-top: 15px;
   font-size: 18px;
   line-height: 21px;
-
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
 }
+
+@media (max-width: 768px){
+    .navbar-brand{
+    padding-top: 23px;
+  }
+}
+
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {

@@ -348,6 +348,23 @@
 				</div>
 			 </div>
 		  </div>
+		  <!-- question 6 -->
+		  <div class="panel panel-default ">
+			 <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question6">
+				<h4 class="panel-title">
+				   <label style="color: red"> <b>&gt;</b> </label>
+				   <label>How can I leave feedback/suggestions?</label>
+				</h4>
+			 </div>
+			 <div id="question6" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+				   <p>
+					You can send us feedback/suggestions <a href="https://goo.gl/forms/AeBk6ST8iEqxRUvL2">here.</a>
+					If an email is provided, we will try to get back to you shortly!
+				   </p>
+				</div>
+			 </div>
+		  </div>
 	   </div>
 	</section>
 	
@@ -356,28 +373,32 @@
 		<h3 id="signup" class="heading">Sign Up</h3>
 		<p class="text-md">Sign up to get news & updates from us!</p>
 		
-		<div class="input-name container">
-		   <div class="row">
-			  <div class="col-sm-6" style="padding-left: 0px">
-				 <div class="form-group">
-					<input id="firstName" type="text" placeholder="First name" class="form-control">
+		<!-- form action is mailchimp -->
+		<form action="https://github.us12.list-manage.com/subscribe/post?u=8bbe6958c201ba15d37df8174&amp;id=6f7f97b746" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+		   <div class="input-name container">
+			  <div class="row">
+				 <div class="col-sm-6" style="padding-left: 0px">
+					<div class="form-group">
+					   <input id="firstName" name="FNAME" type="text" placeholder="First name" class="form-control">
+					</div>
+				 </div>
+				 <div class="col-sm-6" style="padding-left: 0px">
+					<div class="form-group">
+					   <input id="lastName" name="LNAME" type="text" placeholder="Last name" class="form-control">
+					</div>
+				 </div>
+				 <div class="input-group">
+					<input id="emailText" name="EMAIL" type="text" placeholder="Enter your email address" class="form-control">
+					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8bbe6958c201ba15d37df8174_6f7f97b746" tabindex="-1" value=""></div>
+					<span class="input-group-btn">
+					<button type="submit" class="btn btn-default" onclick="emailSubmitClick()">
+					<i class="fa fa-send"></i></button>
+					</span>
 				 </div>
 			  </div>
-			  <div class="col-sm-6" style="padding-left: 0px">
-				 <div class="form-group">
-					<input id="lastName" type="text" placeholder="Last name" class="form-control">
-				 </div>
-			  </div>
-			  <div class="input-group">
-				 <input id="emailText" type="text" placeholder="Enter your email address" class="form-control">
-				 <span class="input-group-btn">
-				 <button id="emailSubmitBtn" type="button" class="btn btn-default" onclick="emailSubmitClick()">
-				 <i class="fa fa-send"></i></button>
-				 </span>
-			  </div>
-			  <label id="message" class="hidden">Success!</label>
 		   </div>
-		</div>
+		</form>
+		
 	</section>
 	
     <!--  clearfix -->

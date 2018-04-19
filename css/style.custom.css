@@ -34,6 +34,11 @@ hr {
 	filter: contrast(1.2);
 }
 
+.bg-color-nc{
+	background-color: #3d69a2;
+	background: linear-gradient(45deg, #162f4c, #538fde);
+}
+
 .padding-top-80{
 	padding-top: 80px;
 }

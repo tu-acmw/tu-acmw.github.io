@@ -18,6 +18,12 @@ NAVBAR
   width: 100%;
 }
 
+hr {
+  background-color: #3d69a2;
+  width: 90%;
+  height: 3px;
+}
+
 [data-toggle~="collapse"] {
     cursor: pointer;
 }
@@ -30,6 +36,10 @@ NAVBAR
 
 .padding-top-80{
 	padding-top: 80px;
+}
+
+.padding-top-25{
+	padding-top: 25px;
 }
 
 .center{
@@ -58,6 +68,11 @@ NAVBAR
 	background-color: white;
 	border-radius: 6px;
 	margin-bottom: 30px;
+}
+
+.rounded{
+	overflow: hidden;
+	border-radius: 6px;
 }
 
 .navbar {
@@ -1242,7 +1257,7 @@ hr {
 }
 .breadcrumb > li + li:before {
   content: "/\00a0";
-  color: #cccccc;
+  color: #555555;
 }
 .breadcrumb > .active {
   color: #999999;

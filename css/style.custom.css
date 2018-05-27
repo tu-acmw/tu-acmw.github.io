@@ -95,8 +95,8 @@ hr {
 @media (min-width: 768px) {
   .navbar ul.nav > li > a {
     border-top: solid 2px transparent;
-    padding-top: 18px;
-    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 14px;
   }
   .navbar ul.nav > li > a:hover,
   .navbar ul.nav > li > a:focus {
@@ -904,7 +904,7 @@ FOOTER AND COPYRIGHT
 /* navbar */
 .navbar {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  min-height: 55px;
+  min-height: 50px;
   margin-bottom: 0;
   border-top: none;
   border-bottom: none;
@@ -925,7 +925,7 @@ FOOTER AND COPYRIGHT
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-collapse {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (min-width: 768px) {
@@ -971,8 +971,8 @@ FOOTER AND COPYRIGHT
 }
 .navbar-brand {
   float: left;
-  padding-top: 15px;
-  font-size: 18px;
+  padding: 14px;
+  font-size: 17.5px;
   line-height: 21px;
 }
 .navbar-brand:hover,
@@ -982,7 +982,7 @@ FOOTER AND COPYRIGHT
 
 @media (max-width: 768px){
     .navbar-brand{
-    padding-top: 23px;
+    padding-top: 15px;
   }
 }
 
@@ -1066,10 +1066,14 @@ FOOTER AND COPYRIGHT
     margin-bottom: 5px;
   }
 }
+
+/* mobile menu button */
 .navbar-btn {
-  margin-top: 12.5px;
-  margin-bottom: 12.5px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  margin-right: 5px;
 }
+
 .navbar-btn.btn-sm {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -1276,11 +1280,10 @@ hr {
   letter-spacing: 0.1em;
   padding: 6px 12px;
   font-size: 14px;
-  line-height: 1.50;
   border-radius: 0;
 }
 .btn-primary {
-  margin-top: 9px;
+  margin-top: 8px;
   color: #3d69a2;
   background-color: transparent;
   border-color: #3d69a2;

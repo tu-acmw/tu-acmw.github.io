@@ -47,6 +47,12 @@ hr {
 	padding-top: 25px;
 }
 
+.heading-event{
+	font-family: arial;
+	font-size: 200% !important;
+	color:white
+}
+
 .center{
 	display: flex;
 	justify-content: center;

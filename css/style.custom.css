@@ -1629,13 +1629,7 @@ p {
 .lead {
   margin-top: 15px;
   margin-bottom: 16px;
-  font-size: 16px;
-}
-
-@media (min-width: 768px) {
-  .lead {
-    font-size: 21px;
-  }
+  font-size: 22px;
 }
 
 .text-small {

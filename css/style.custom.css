@@ -28,6 +28,23 @@ hr {
     cursor: pointer;
 }
 
+@media (max-width: 991px) {
+	.carousel-control{
+		color: black;
+		background-color: #DADADA;	
+	}
+}
+.carousel-control{
+	width: 8.5%; 
+	background-image: none !important;
+}
+/* remove text underline*/
+.carousel-control:hover,
+.carousel-control:active,
+.carousel-control:focus {
+	border-bottom: none !important;
+}
+
 .bg-color{
 	background-color: #3d69a2;
 	background: linear-gradient(45deg, #162f4c, #538fde);

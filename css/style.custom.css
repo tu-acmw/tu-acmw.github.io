@@ -45,8 +45,15 @@ hr {
 	border-bottom: none !important;
 }
 
+.carousel-indicators li{
+	border: 1px solid rgb(255, 219, 118);
+}
+.carousel-indicators .active{
+	background-color: rgb(255, 219, 118);
+}
+
 .bg-color{
-	background-color: #1e1e1e;
+	background-color: rgb(78, 61, 112);
 }
 
 .padding-top-80{
@@ -57,22 +64,26 @@ hr {
 	padding-top: 25px;
 }
 
-.color-pink{
-	color: #d8155b;
-}
-
 .about{
-	color: #3ba3c3;
+	color: rgb(78, 61, 112);
 }
 
-.color-green{
-	color: #97d31f;
+.about-sub-heading{
+	color: rgb(255, 219, 118);
+}
+
+.heading-color{
+	color: rgb(250, 162, 60);
+}
+
+.sub-heading-color{
+	color: #23d922;
 }
 
 .heading-event{
 	font-family: arial;
 	font-size: 200% !important;
-	color: #97d31f;
+	color: rgb(250, 162, 60);
 }
 
 .page-content{
@@ -98,7 +109,6 @@ hr {
 }
 
 .container-events{
-	
 	background-color: #f2f2f2;
 	margin-bottom: 30px;
 }
@@ -116,7 +126,7 @@ hr {
 .navbar a.navbar-brand {
   font-weight: bold;
   letter-spacing: 0.2em;
-  color: #3ba3c3;
+  color: rgb(250, 162, 60);
 }
 .navbar a.navbar-brand:focus,
 .navbar a.navbar-brand:hover {
@@ -135,13 +145,11 @@ hr {
   }
   .navbar ul.nav > li > a:hover,
   .navbar ul.nav > li > a:focus {
-    border-top-color: #3ba3c3; /* hover link top bar color */
     border-bottom: none;
   }
   .navbar ul.nav > li.active > a,
   .navbar ul.nav > li.open > a {
     text-decoration: none !important;
-    border-top-color: #3ba3c3; /* active link top bar color */
   }
 }
 .navbar-toggle {
@@ -324,8 +332,8 @@ fieldset[disabled] .btn-white.active {
 .btn-white:active,
 .btn-white.active,
 .open .dropdown-toggle.btn-white {
-  color: #3ba3c3;
-  border-color: #3ba3c3;
+  color: rgb(255, 219, 118);
+  border-color: rgb(255, 219, 118);
 }
 .icon {
   display: inline-block;
@@ -389,7 +397,7 @@ p.social a {
   font-size: 15px;
   text-align: center;
   vertical-align: bottom;
-  color: #3ba3c3; /*social icon color*/
+  color: rgb(78, 61, 112); /*social icon color*/
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -405,7 +413,7 @@ p.social a {
 p.social a:hover {
   border-bottom: solid 0px #000;
   text-decoration: none;
-  color: #c0d10c; /* social icon hover */
+  color: rgb(255, 244, 133); /* social icon hover */
 }
 
 p.social a i {
@@ -873,7 +881,9 @@ FOOTER AND COPYRIGHT
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #3ba3c3;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+	border-color: transparent;
 }
 .nav-tabs {
   border-bottom: 1px solid #dddddd;
@@ -1045,7 +1055,7 @@ FOOTER AND COPYRIGHT
   
   .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #3ba3c3 !important;
+    color: rgb(250, 162, 60) !important;
     background-color: #282828 !important;
     background-image: none;
   }
@@ -1136,13 +1146,13 @@ FOOTER AND COPYRIGHT
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #3ba3c3;
+  color: rgb(250, 162, 60);
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #3ba3c3;
+  color: rgb(250, 162, 60);
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .disabled > a,
@@ -1168,7 +1178,7 @@ FOOTER AND COPYRIGHT
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   background-color: transparent;
-  color: #3ba3c3;
+  color: rgb(250, 162, 60);
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -1176,7 +1186,7 @@ FOOTER AND COPYRIGHT
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #3ba3c3;
+    color: rgb(250, 162, 60);
     background-color: transparent;
   }
   
@@ -1184,7 +1194,7 @@ FOOTER AND COPYRIGHT
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #3ba3c3;
+    color: rgb(250, 162, 60);
     background-color: #282828;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
@@ -1198,7 +1208,7 @@ FOOTER AND COPYRIGHT
   color: #000000;
 }
 .navbar-default .navbar-link:hover {
-  color: #3ba3c3;
+  color: rgb(250, 162, 60);
 }
 /* dropdowns */
 .dropdown-menu {
@@ -1222,14 +1232,14 @@ FOOTER AND COPYRIGHT
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #3ba3c3;
+  color: rgb(250, 162, 60);
   background-color: transparent;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-  color: #ffffff;
-  background-color: #3ba3c3;
+  color: rgb(250, 162, 60);
+  background-color: transparent;
 }
 /* modal */
 .modal-content {
@@ -1438,10 +1448,11 @@ label {
 }
 
 #signUpSubmit{
+	border: 1.5px solid #17af16;
 	background-color: #f2f2f2;
 	color: #d1d1d1;
-	padding-bottom: 3px;
-	padding-top: 4px;
+	padding-bottom: 2px;
+	padding-top: 5px;
 	padding-left: 7px;
 	padding-right: 5px;
 	font-size: 18px;
@@ -1450,7 +1461,7 @@ label {
 }
 #signUpSubmit:hover,
 #signUpSubmit:focus .fa-power-off{
-	color: #3ba3c3;
+	color: #18c117;
 	background-color: #f2f2f2;
 }
 
@@ -1466,10 +1477,10 @@ label {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.55;
-  color: #555555;
-  background-color: #f2f2f2;
+  color: rgb(255, 219, 118);
+  background-color: rgb(78, 61, 112);
   background-image: none;
-  border: 1px solid #cccccc;
+  border: 1px solid #17af16;
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -1483,7 +1494,7 @@ label {
   color: #999999;
 }
 .form-control::-webkit-input-placeholder {
-  color: #999999;
+  color: #d7d5d9; /* placeholder text color */
 }
 .form-control:focus {
   border-color: #3ba3c3;
@@ -1739,6 +1750,10 @@ address {
   color: #d7d5d9;
 }
 
+.panel-icon{
+	color: #23d922;
+}
+
 .panel-title{
 	padding-left: 25px;
 	text-align: left;
@@ -1766,11 +1781,11 @@ address {
 
 .panel-default > .panel-heading {
   color: #333333;
-  background-color: #444;
+  background-color: #282828;
   border-color: #666666;
 }
 .panel-default > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: green;
+  border-top-color: #17af16; /* green */
 }
 .panel-default > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #666666;

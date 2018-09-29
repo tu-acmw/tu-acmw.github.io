@@ -98,6 +98,7 @@ hr {
 }
 
 .container-events{
+	
 	background-color: #f2f2f2;
 	margin-bottom: 30px;
 }
@@ -278,9 +279,9 @@ a:hover {
 }
 
 .btn-white {
-  color: #ffffff;
+  color: #d7d5d9;
   background-color: transparent;
-  border-color: #ffffff;
+  border-color: #d7d5d9;
 }
 .btn-white:hover,
 .btn-white:focus,
@@ -324,8 +325,7 @@ fieldset[disabled] .btn-white.active {
 .btn-white.active,
 .open .dropdown-toggle.btn-white {
   color: #3ba3c3;
-  background-color: #fff;
-  border-color: #fff;
+  border-color: #3ba3c3;
 }
 .icon {
   display: inline-block;
@@ -421,9 +421,6 @@ p.social.social--big a {
   font-size: 20px;
 }
 
-p.social.social--big i {
-  line-height: 50px;
-}
 /* jumbotron */
 .jumbotron{
 	margin: 0;
@@ -812,7 +809,7 @@ FOOTER AND COPYRIGHT
 .footer__copyright {
   background: #282828;
   color: #ccc;
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 12px;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
@@ -823,7 +820,6 @@ FOOTER AND COPYRIGHT
   .footer__copyright p {
     float: none !important;
     text-align: center;
-    margin-bottom: 10px;
   }
 }
 .footer__copyright p.credit {
@@ -1049,13 +1045,13 @@ FOOTER AND COPYRIGHT
   
   .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #262626 !important;
-    background-color: #7caeff !important;
+    color: #3ba3c3 !important;
+    background-color: #282828 !important;
     background-image: none;
   }
   
   .navbar-nav .open .dropdown-menu > li:active {
-    background-color: black !important;
+    background-color: #3ba3c3 !important;
   }
 }
 @media (min-width: 768px) {
@@ -1095,6 +1091,7 @@ FOOTER AND COPYRIGHT
   margin-top: 5px;
   margin-bottom: 3px;
   margin-right: 5px;
+  color: #d7d5d9;
 }
 
 .navbar-btn.btn-sm {
@@ -1128,7 +1125,7 @@ FOOTER AND COPYRIGHT
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #000000;
+  color: #d7d5d9;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
@@ -1175,7 +1172,7 @@ FOOTER AND COPYRIGHT
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #000000;
+    color: #d7d5d9;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -1187,8 +1184,8 @@ FOOTER AND COPYRIGHT
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: white;
-    background-color: #3ba3c3;
+    color: #3ba3c3;
+    background-color: #282828;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -1207,7 +1204,7 @@ FOOTER AND COPYRIGHT
 .dropdown-menu {
   z-index: 1000;
   font-size: 12px;
-  background-color: #ffffff;
+  background-color: #282828;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0;
@@ -1219,14 +1216,14 @@ FOOTER AND COPYRIGHT
   background-color: #e5e5e5;
 }
 .dropdown-menu > li > a {
-	font-family: arial;
+  font-family: arial;
   line-height: 1.55;
-  color: black;
+  color: #d7d5d9;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #262626;
-  background-color: #7caeff; /* light blue */
+  color: #3ba3c3;
+  background-color: transparent;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -1255,8 +1252,8 @@ a {
 }
 a:hover,
 a:focus {
-  color: #555555;
-  border-bottom: solid 1px #000;
+  color: #0b82a5;
+  border-bottom: solid 1px #0b82a5;
   text-decoration: none;
 }
 a:focus {
@@ -1306,7 +1303,6 @@ hr {
   border-radius: 0;
 }
 .btn-primary {
-  margin-top: 8px;
   color: #3ba3c3;
   background-color: transparent;
   border-color: #3ba3c3;
@@ -1442,6 +1438,7 @@ label {
 }
 
 #signUpSubmit{
+	background-color: #f2f2f2;
 	color: #d1d1d1;
 	padding-bottom: 3px;
 	padding-top: 4px;
@@ -1454,7 +1451,7 @@ label {
 #signUpSubmit:hover,
 #signUpSubmit:focus .fa-power-off{
 	color: #3ba3c3;
-	background-color: #fff;
+	background-color: #f2f2f2;
 }
 
 .input-name{
@@ -1470,7 +1467,7 @@ label {
   font-size: 14px;
   line-height: 1.55;
   color: #555555;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   background-image: none;
   border: 1px solid #cccccc;
   border-radius: 0;

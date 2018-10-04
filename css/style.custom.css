@@ -30,13 +30,27 @@ hr {
 
 @media (max-width: 991px) {
 	.carousel-control{
+		width: 8% !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
 		color: black;
 		background-color: #DADADA;	
 	}
+	.carousel-control:hover,
+	.carousel-control:active,
+	.carousel-control:focus {
+		opacity: 0.2;
+		color: black;
+	}
 }
+
 .carousel-control{
-	width: 8.5%; 
+	margin-left: 3.5%;
+	margin-right: 3.5%;
+	padding-top: 15%;
+	width: 5%; 
 	background-image: none !important;
+	opacity: 0.2;
 }
 /* remove text underline*/
 .carousel-control:hover,

@@ -44,6 +44,7 @@ hr {
 .carousel-control:active,
 .carousel-control:focus {
     border-bottom: none !important;
+    opacity: 0.2;
 }
 
 .carousel-indicators li {
@@ -1900,7 +1901,7 @@ address {
 }
 
 .panel-title {
-    padding-left: 25px;
+    padding-left: 6px;
     text-align: left;
     color: #d7d5d9;
 }
@@ -1921,6 +1922,10 @@ address {
         margin-left: 25%;
         width: 50%;
         border-color: #666666;
+    }
+
+    .panel-title {
+        padding-left: 20px;
     }
 }
 

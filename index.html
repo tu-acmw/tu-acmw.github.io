@@ -19,7 +19,7 @@
     <!-- social media link preview -->
     <meta property="og:title" content="Join ACM-W!">
     <meta property="og:description" content="We are an organization that focuses on empowering women in the IT/Computing industry.">
-    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/tu-acmw.appspot.com/o/acmw_logo_new.png?alt=media&token=6dc3ce50-8e5d-49f2-9829-e924a2b74762">
+    <meta property="og:image" content="https://github.com/tu-acmw/tu-acmw.github.io/blob/master/img/preview_logo.png">
     <meta property="og:url" content="https://tu-acmw.github.io/">
     <meta property="og:type" content="website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,12 +28,10 @@
     <link rel="icon" href="img/acmw_icon.png" />
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Font Awesome and Pixeden Icon Stroke icon fonts-->
+    <!-- Font Awesome icon fonts-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- Google fonts - Roboto-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
     <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.custom.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="300">
@@ -385,7 +383,7 @@
                         <input id="emailText" name="EMAIL" type="text" placeholder="Email address" class="form-control">
                         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8bbe6958c201ba15d37df8174_6f7f97b746" tabindex="-1" value=""></div>
                         <span class="input-group-btn">
-                            <button id="signUpSubmit" type="submit" class="btn btn-default" onclick="emailSubmitClick()">
+                            <button id="signUpSubmit" type="submit" class="btn btn-default">
                                 <i class="fa fa-power-off"></i></button>
                         </span>
                     </div>
@@ -393,10 +391,8 @@
             </form>
         </div>
     </section>
-
     <!--  clearfix -->
     <div class="container clearfix"></div>
-
     <!-- Social Media -->
     <footer class="footer">
         <div class="footer__copyright">
@@ -414,25 +410,8 @@
             </div>
         </div>
     </footer>
-
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyBCaCRJbYEBT3RFItkwHRiozSUYBL2eI-o",
-            authDomain: "tu-acmw.firebaseapp.com",
-            databaseURL: "https://tu-acmw.firebaseio.com",
-            projectId: "tu-acmw",
-            storageBucket: "",
-            messagingSenderId: "259251664595"
-        };
-        firebase.initializeApp(config);
-
-    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 

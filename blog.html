@@ -104,11 +104,11 @@
                         </p>
                         <div class="row center">
                             <div class="col-lg-6">
-                                <img src="img/blog/2017/10.06.17_hall.jpg" alt="" class="img-responsive rounded">
+                                <img data-src="img/blog/2017/10.06.17_hall.jpg" alt="" class="img-responsive rounded lazy">
                                 <figcaption>Conference hallway</figcaption>
                             </div>
                             <div class="col-lg-6">
-                                <img src="img/blog/2017/10.05.17_career-fair.jpg" alt="" class="img-responsive rounded">
+                                <img data-src="img/blog/2017/10.05.17_career-fair.jpg" alt="" class="img-responsive rounded lazy">
                                 <figcaption>Career Fair</figcaption>
                                 <br>
                             </div>
@@ -132,7 +132,7 @@
                         <p class="text-white"></p>
                         <div class="row center">
                             <div class="col-lg-6">
-                                <img src="img/blog/2017/10.06.17_end.jpg" alt="" class="img-responsive rounded">
+                                <img data-src="img/blog/2017/10.06.17_end.jpg" alt="" class="img-responsive rounded lazy">
                                 <figcaption>Last night of the GHC</figcaption>
                                 <br>
                             </div>
@@ -145,6 +145,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        (function(w, d) {
+            var b = d.getElementsByTagName('body')[0];
+            var s = d.createElement("script");
+            var v = !("IntersectionObserver" in w) ? "8.17.0" : "10.19.0";
+            s.async = true; // This includes the script as async. See the "recipes" section for more information about async loading of LazyLoad.
+            s.src = "https://cdn.jsdelivr.net/npm/vanilla-lazyload@" + v + "/dist/lazyload.min.js";
+            w.lazyLoadOptions = { /* Your options here */ };
+            b.appendChild(s);
+        }(window, document));
+        var myLazyLoad = new LazyLoad({
+            elements_selector: ".lazy"
+        });
+
+    </script>
 </body>
 
 </html>

@@ -18,11 +18,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
     <!-- website tab icon -->
-    <link rel="icon" href="img/acmw_icon.png" />
+    <link rel="icon" href="img/acmw_icon.png">
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Font Awesome icon fonts-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- theme stylesheet-->
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -142,6 +140,9 @@
             </div>
         </div>
     </section>
+    <!-- Font Awesome icon fonts-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Scripts -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="js/bootstrap.min.js"></script>
     <script defer src="js/main.js"></script>
@@ -151,7 +152,7 @@
             var s = d.createElement("script");
             var v = !("IntersectionObserver" in w) ? "8.17.0" : "10.19.0";
             s.async = true; // This includes the script as async. See the "recipes" section for more information about async loading of LazyLoad.
-            s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.19.0/lazyload.min.js";
+            s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
             w.lazyLoadOptions = {
                 elements_selector: ".lazy"
             };

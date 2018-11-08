@@ -999,13 +999,12 @@ label {
 
 .input-group {
     min-width: 250px;
-    max-width: 350px;
+    max-width: 360px;
 }
 
-.input-group .col-sm-6 {
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-bottom: 5px;
+.input-name {
+    min-width: 240px;
+    max-width: 340px;
 }
 
 #signUpSubmit {
@@ -1013,7 +1012,7 @@ label {
     background-color: #303030;
     color: #d1d1d1;
     padding-bottom: 2px;
-    padding-top: 5.5px;
+    padding-top: 6px;
     padding-left: 7px;
     padding-right: 5px;
     font-size: 18px;
@@ -1055,6 +1054,10 @@ label {
 .form-control::-webkit-input-placeholder {
     color: #d7d5d9;
     /* placeholder text color */
+}
+
+.form-group {
+    margin-bottom: 5px;
 }
 
 /* pager*/

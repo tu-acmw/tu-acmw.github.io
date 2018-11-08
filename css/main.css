@@ -37,6 +37,10 @@ CUSTOM
     opacity: 0.2;
 }
 
+.carousel-indicators {
+    bottom: -10px;
+}
+
 .carousel-indicators li {
     border: 1px solid rgb(255, 219, 118);
 }
@@ -344,10 +348,6 @@ p.social.social--big a {
 }
 
 /* jumbotron */
-.jumbotron {
-    margin: 0;
-}
-
 .main-jumbotron {
     height: 100%;
     display: flex;
@@ -999,7 +999,13 @@ label {
 
 .input-group {
     min-width: 250px;
-    max-width: 360px;
+    max-width: 350px;
+}
+
+.input-group .col-sm-6 {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 5px;
 }
 
 #signUpSubmit {
@@ -1019,11 +1025,6 @@ label {
 #signUpSubmit:hover,
 #signUpSubmit:focus .fa-power-off {
     color: #18c117;
-}
-
-.input-name {
-    min-width: 240px;
-    max-width: 340px;
 }
 
 .form-control {
@@ -1054,10 +1055,6 @@ label {
 .form-control::-webkit-input-placeholder {
     color: #d7d5d9;
     /* placeholder text color */
-}
-
-.form-group {
-    margin-bottom: 5px;
 }
 
 /* pager*/
@@ -1283,7 +1280,7 @@ p {
 }
 
 .text-large {
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .text-italic {
@@ -1353,9 +1350,11 @@ blockquote.pull-right {
 }
 
 .panel-title {
+    font-weight: normal;
     padding-left: 6px;
     text-align: left;
     color: #d7d5d9;
+    line-height: 1.5;
 }
 
 .panel-body {

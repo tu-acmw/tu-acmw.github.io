@@ -107,6 +107,13 @@ CUSTOM
     margin-bottom: 20px;
 }
 
+@media (max-width: 767px){
+	.hackathon{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
 .image-ctn {
     background-color: #f2f2f2;
     margin-bottom: 30px;
@@ -1258,7 +1265,7 @@ h5,
 }
 
 p {
-    margin: 0 0 21px;
+    margin: 0 0 15px;
 }
 
 .lead {

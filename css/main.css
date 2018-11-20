@@ -107,11 +107,11 @@ CUSTOM
     margin-bottom: 20px;
 }
 
-@media (max-width: 767px){
-	.hackathon{
-		padding-left: 20px;
-		padding-right: 20px;
-	}
+@media (max-width: 767px) {
+    .hackathon {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .image-ctn {
@@ -221,12 +221,12 @@ section {
     margin-top: 30px !important;
 }
 
-.margin-bottom {
-    margin-bottom: 30px !important;
+.margin-top--big {
+    margin-top: 60px !important;
 }
 
-.margin-bottom--medium {
-    margin-bottom: 45px !important;
+.margin-bottom {
+    margin-bottom: 30px !important;
 }
 
 .margin-bottom--big {
@@ -360,8 +360,6 @@ p.social.social--big a {
     display: flex;
     align-items: center;
     position: relative;
-    padding-top: 80px;
-    padding-bottom: 80px;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
     text-align: center;
     background-color: #1e1e1e;
@@ -381,6 +379,15 @@ p.social.social--big a {
 FOOTER AND COPYRIGHT
 =====================
 */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #202020;
+    color: #d7d5d9;
+    padding: 5px;
+}
+
 .footer__copyright {
     background: #282828;
     color: #ccc;
@@ -855,6 +862,17 @@ FOOTER AND COPYRIGHT
     background-color: transparent;
 }
 
+/* horizontal scrollbar */
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+}
+
+.scroll-item {
+    min-width: 300px;
+}
+
 /* scaffolding */
 body {
     font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -1297,6 +1315,10 @@ p {
     font-style: italic;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .text-primary {
     color: #3ba3c3;
 }
@@ -1322,8 +1344,9 @@ abbr[data-original-title] {
 blockquote {
     padding: 10.5px 21px;
     margin: 0 0 21px;
+    background: #303030;
     font-size: 14px;
-    border-left: 5px solid #3ba3c3;
+    border-radius: 4px;
 }
 
 blockquote footer,

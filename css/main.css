@@ -55,8 +55,12 @@ CUSTOM
     /* purple */
 }
 
-.padding-top-60 {
-    padding-top: 60px;
+.padding-top-55 {
+    padding-top: 55px;
+}
+
+.padding-top-45 {
+    padding-top: 45px;
 }
 
 .about {
@@ -107,11 +111,11 @@ CUSTOM
     margin-bottom: 20px;
 }
 
-@media (max-width: 767px){
-	.hackathon{
-		padding-left: 20px;
-		padding-right: 20px;
-	}
+@media (max-width: 767px) {
+    .hackathon {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .image-ctn {
@@ -153,8 +157,8 @@ NAVBAR
 @media (min-width: 768px) {
     .navbar ul.nav > li > a {
         border-top: solid 2px transparent;
-        padding-top: 15px;
-        padding-bottom: 14px;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
 
     .navbar ul.nav > li > a:hover,
@@ -492,7 +496,7 @@ FOOTER AND COPYRIGHT
 /* navbar */
 .navbar {
     font-family: "Roboto", Helvetica, Arial, sans-serif;
-    min-height: 50px;
+    min-height: 44px;
     margin-bottom: 0;
     border-top: none;
     border-bottom: none;
@@ -572,9 +576,10 @@ FOOTER AND COPYRIGHT
 
 .navbar-brand {
     float: left;
-    padding: 14px;
-    font-size: 17.5px;
+    padding: 12px;
+    font-size: 17px;
     line-height: 21px;
+    height: 44px;
 }
 
 .navbar-brand:hover,
@@ -824,8 +829,7 @@ FOOTER AND COPYRIGHT
     z-index: 1000;
     font-size: 12px;
     background-color: #282828;
-    border: 1px solid #cccccc;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid #282828;
     border-radius: 0;
 }
 
@@ -925,7 +929,7 @@ hr {
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    padding: 6px 12px;
+    padding: 5px 11px;
     font-size: 14px;
     border-radius: 0;
 }
@@ -989,7 +993,7 @@ hr {
 
 /* dropdowns */
 .dropdown-menu > li > a {
-    padding: 8px 20px;
+    padding: 7.5px 18px;
 }
 
 /* labels */

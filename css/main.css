@@ -511,8 +511,9 @@ FOOTER AND COPYRIGHT
 .navbar-collapse {
     max-height: 340px;
     overflow-x: visible;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: right;
 }
 
 .navbar-collapse.in {
@@ -612,8 +613,6 @@ FOOTER AND COPYRIGHT
 }
 
 .navbar-nav > li > a {
-    padding-top: 8.5px;
-    padding-bottom: 8.5px;
     line-height: 18px;
     border-bottom: none;
 }
@@ -627,7 +626,7 @@ FOOTER AND COPYRIGHT
 
     .navbar-nav .open .dropdown-menu > li > a,
     .navbar-nav .open .dropdown-menu .dropdown-header {
-        padding: 5px 15px 5px 25px;
+        padding: 7px 15px 7px 25px;
     }
 
     /* mobile menu dropdown center */
@@ -792,6 +791,7 @@ FOOTER AND COPYRIGHT
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #d7d5d9;
+        background-color: #282828;
     }
 
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,

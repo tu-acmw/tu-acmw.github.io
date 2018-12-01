@@ -81,6 +81,16 @@ CUSTOM
     border-radius: 6px;
 }
 
+.no-padding {
+    padding: 0px !important;
+}
+
+@media (min-width: 992px) {
+    .col-md-offset-1 {
+        margin-left: 5.33333333% !important;
+    }
+}
+
 /*
 =====================
 SWIPER
@@ -102,33 +112,11 @@ SWIPER
 }
 
 .swiper-button-next {
-    padding-left: 4.5%;
     margin-right: 3%;
 }
 
 .swiper-button-prev {
-    padding-right: 4.5%;
     margin-left: 3%;
-}
-
-@media (max-width: 767px) {
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        opacity: 0.2;
-        background-color: #DADADA;
-        margin: 0;
-        padding: 0;
-        width: 23px !important;
-    }
-
-    .swiper-button-next {
-        right: 0px !important;
-    }
-
-    .swiper-button-prev {
-        left: 0px !important;
-    }
 }
 
 .swiper-pagination {

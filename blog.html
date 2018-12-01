@@ -13,15 +13,13 @@
 	</script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ACM-W Blog</title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="all,follow">
+    <title>ACM-W Blog</title>
     <!-- website tab icon -->
     <link rel="icon" href="img/acmw_icon.png">
-    <!-- Bootstrap CSS-->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- theme stylesheet-->
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -49,7 +47,7 @@
                         <li class="dropdown active"><a href="#" data-toggle="dropdown" class="dropdown-toggle">More <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li class="active"><a href="#">Blog</a></li>
-                                <li><a target="_blank" href="https://goo.gl/forms/AeBk6ST8iEqxRUvL2">Suggestions</a></li>
+                                <li><a target="_blank" href="https://goo.gl/forms/AeBk6ST8iEqxRUvL2">Feedback</a></li>
                             </ul>
                         </li>
                         <li>
@@ -137,12 +135,22 @@
             </div>
         </div>
     </section>
-    <!-- Font Awesome icon fonts-->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="js/bootstrap.min.js"></script>
-    <script defer src="js/main.js"></script>
+    <script>
+        //collapse mobile menu when link is clicked
+        $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
+            $('.navbar-toggle:visible').click();
+        });
+        //scroll up by 100px when jumping to link/anchor from navbar
+        window.addEventListener("hashchange", function() {
+            window.scrollTo(window.scrollX, window.scrollY - 100);
+        });
+
+    </script>
     <script>
         (function(w, d) {
             var b = d.getElementsByTagName('body')[0];

@@ -3,53 +3,6 @@
 CUSTOM
 =====================
 */
-@media (max-width: 991px) {
-    .carousel-control {
-        width: 7% !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        color: black;
-        background-color: #DADADA;
-    }
-
-    .carousel-control:hover,
-    .carousel-control:active,
-    .carousel-control:focus {
-        opacity: 0.2;
-        color: black;
-    }
-}
-
-.carousel-control {
-    margin-left: 3.5%;
-    margin-right: 3.5%;
-    padding-top: 15%;
-    width: 5%;
-    background-image: none !important;
-    opacity: 0.2;
-}
-
-/* remove text underline*/
-.carousel-control:hover,
-.carousel-control:active,
-.carousel-control:focus {
-    border-bottom: none !important;
-    opacity: 0.2;
-}
-
-.carousel-indicators {
-    bottom: -10px;
-}
-
-.carousel-indicators li {
-    border: 1px solid rgb(255, 219, 118);
-}
-
-.carousel-indicators .active {
-    background-color: rgb(255, 219, 118);
-    /* yellow */
-}
-
 .bg-color {
     background-color: rgb(78, 61, 112);
     /* purple */
@@ -126,6 +79,76 @@ CUSTOM
 .rounded {
     overflow: hidden;
     border-radius: 6px;
+}
+
+/*
+=====================
+SWIPER
+=====================
+*/
+.swiper-container {
+    margin: 0 !important;
+}
+
+.swiper-button-black {
+    opacity: 0.5;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: 0% !important;
+    height: 100% !important;
+    background-size: 22px 44px !important;
+}
+
+.swiper-button-next {
+    padding-left: 4.5%;
+    margin-right: 3%;
+}
+
+.swiper-button-prev {
+    padding-right: 4.5%;
+    margin-left: 3%;
+}
+
+@media (max-width: 767px) {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        opacity: 0.2;
+        background-color: #DADADA;
+        margin: 0;
+        padding: 0;
+        width: 23px !important;
+    }
+
+    .swiper-button-next {
+        right: 0px !important;
+    }
+
+    .swiper-button-prev {
+        left: 0px !important;
+    }
+}
+
+.swiper-pagination {
+    bottom: 0px !important;
+}
+
+.swiper-pagination-bullet {
+    width: 11px !important;
+    height: 11px !important;
+    border: 1px solid rgb(255, 219, 118);
+    background: none !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: rgb(255, 219, 118) !important;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 3px !important;
 }
 
 /*

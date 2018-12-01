@@ -26,8 +26,10 @@
     <meta name="robots" content="all,follow">
     <!-- website tab icon -->
     <link rel="icon" href="img/acmw_icon.png">
-    <!-- Critical Path CSS -->
-    <link rel="stylesheet" href="css/critical.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="300">
@@ -54,7 +56,7 @@
                         <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">More <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="blog.html">Blog</a></li>
-                                <li><a target="_blank" href="https://goo.gl/forms/AeBk6ST8iEqxRUvL2">Suggestions</a></li>
+                                <li><a target="_blank" href="https://goo.gl/forms/AeBk6ST8iEqxRUvL2">Feedback</a></li>
                             </ul>
                         </li>
                         <li>
@@ -108,45 +110,43 @@
     <section id="events" style="padding-top:0; padding-bottom: 0;">
         <div class="container">
             <p class="lead heading-event">Upcoming Meetings</p>
-            <div id="eventCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#eventCarousel" data-slide-to="0"></li>
-                    <li data-target="#eventCarousel" data-slide-to="1" class="active"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="item">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
                         <div class="row center">
                             <div class="col-md-5 col-sm-9">
                                 <div class="image-ctn rounded">
-                                    <img src="img/events/fall_2018/11.05.18_homework-night.png" alt="" class="img-responsive">
+                                    <img data-src="img/events/fall_2018/11.05.18_homework-night.png" alt="" class="swiper-lazy img-responsive">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-9">
+                                <div class="image-ctn rounded">
+                                    <img data-src="img/events/fall_2018/11.26.18_thanksgiving-potluck.png" alt="" class="swiper-lazy img-responsive">
+                                    <div class="swiper-lazy-preloader"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item active">
+                    <div class="swiper-slide">
                         <div class="row center">
                             <div class="col-md-5 col-sm-9">
                                 <div class="image-ctn rounded">
-                                    <img src="img/events/fall_2018/11.26.18_thanksgiving-potluck.png" alt="" class="img-responsive">
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-sm-9">
-                                <div class="image-ctn rounded">
-                                    <img src="img/events/fall_2018/12.03.18_game-night.png" alt="" class="img-responsive">
+                                    <img data-src="img/events/fall_2018/12.03.18_game-night.png" alt="" class="swiper-lazy img-responsive">
+                                    <div class="swiper-lazy-preloader"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#eventCarousel" data-slide="prev">
-                    <i class="fa fa-angle-left fa-2x"></i>
-                </a>
-                <a class="right carousel-control" href="#eventCarousel" data-slide="next">
-                    <i class="fa fa-angle-right fa-2x"></i>
-                </a>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev swiper-button-black"></div>
+                <div class="swiper-button-next swiper-button-black"></div>
             </div>
+
             <p class="lead heading-event">Hackathons</p>
             <div class="row center">
                 <div class="col-md-4 col-sm-6">
@@ -156,14 +156,6 @@
                             <i class="fa fa-map-marker"></i> University of Maryland<br>
                             <i class="fa fa-bus"></i> Bus: Nov. 9th, 5:30PM, Tuttleman<br>
                             <i class="fa fa-globe"></i> <a target="_blank" href="https://gotechnica.org">gotechnica.org</a></p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="hackathon rounded">
-                        <h4 class="lead-h">Local Hack Day 2018</h4>
-                        <p class="text-md"><i class="fa fa-calendar"></i> December 1st, 2018<br>
-                            <i class="fa fa-map-marker"></i> Temple University<br>
-                            <i class="fa fa-globe"></i> <a target="_blank" href="https://tudev.org/lhd">tudev.org/lhd</a></p>
                     </div>
                 </div>
             </div>
@@ -374,16 +366,25 @@
         <p class="heading-color">&copy;2018 ACM-W</p>
     </footer>
 
-    <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- Font Awesome icon fonts-->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="js/bootstrap.min.js"></script>
-    <script defer src="js/main.js"></script>
+    <script>
+        //collapse mobile menu when link is clicked
+        $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
+            $('.navbar-toggle:visible').click();
+        });
+        //scroll up by 100px when jumping to link/anchor from navbar
+        window.addEventListener("hashchange", function() {
+            window.scrollTo(window.scrollX, window.scrollY - 100);
+        });
+
+    </script>
     <script>
         (function(w, d) {
             var b = d.getElementsByTagName('body')[0];
@@ -396,6 +397,32 @@
             };
             b.appendChild(s);
         }(window, document));
+
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoHeight: true,
+            preLoadImages: false,
+            lazy: true,
+            speed: 400,
+            threshold: 30,
+            spaceBetween: 30,
+            initialSlide: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                lazyImageReady: function() {
+                    swiper.updateAutoHeight();
+                }
+            }
+        });
 
     </script>
 </body>

@@ -3,60 +3,17 @@
 CUSTOM
 =====================
 */
-@media (max-width: 991px) {
-    .carousel-control {
-        width: 7% !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        color: black;
-        background-color: #DADADA;
-    }
-
-    .carousel-control:hover,
-    .carousel-control:active,
-    .carousel-control:focus {
-        opacity: 0.2;
-        color: black;
-    }
-}
-
-.carousel-control {
-    margin-left: 3.5%;
-    margin-right: 3.5%;
-    padding-top: 15%;
-    width: 5%;
-    background-image: none !important;
-    opacity: 0.2;
-}
-
-/* remove text underline*/
-.carousel-control:hover,
-.carousel-control:active,
-.carousel-control:focus {
-    border-bottom: none !important;
-    opacity: 0.2;
-}
-
-.carousel-indicators {
-    bottom: -10px;
-}
-
-.carousel-indicators li {
-    border: 1px solid rgb(255, 219, 118);
-}
-
-.carousel-indicators .active {
-    background-color: rgb(255, 219, 118);
-    /* yellow */
-}
-
 .bg-color {
     background-color: rgb(78, 61, 112);
     /* purple */
 }
 
-.padding-top-60 {
-    padding-top: 60px;
+.padding-top-55 {
+    padding-top: 55px;
+}
+
+.padding-top-45 {
+    padding-top: 45px;
 }
 
 .about {
@@ -124,6 +81,64 @@ CUSTOM
     border-radius: 6px;
 }
 
+.no-padding {
+    padding: 0px !important;
+}
+
+@media (min-width: 992px) {
+    .col-md-offset-1 {
+        margin-left: 5.33333333% !important;
+    }
+}
+
+/*
+=====================
+SWIPER
+=====================
+*/
+.swiper-container {
+    margin: 0 !important;
+}
+
+.swiper-button-black {
+    opacity: 0.5;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: 0% !important;
+    height: 100% !important;
+    background-size: 22px 44px !important;
+}
+
+.swiper-button-next {
+    margin-right: 3%;
+}
+
+.swiper-button-prev {
+    margin-left: 3%;
+}
+
+.swiper-pagination {
+    bottom: 0px !important;
+}
+
+.swiper-pagination-bullet {
+    width: 11px !important;
+    height: 11px !important;
+    border: 1px solid rgb(255, 219, 118);
+    background: none !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: rgb(255, 219, 118) !important;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 3px !important;
+}
+
 /*
 =====================
 NAVBAR
@@ -153,8 +168,8 @@ NAVBAR
 @media (min-width: 768px) {
     .navbar ul.nav > li > a {
         border-top: solid 2px transparent;
-        padding-top: 15px;
-        padding-bottom: 14px;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
 
     .navbar ul.nav > li > a:hover,
@@ -499,7 +514,7 @@ FOOTER AND COPYRIGHT
 /* navbar */
 .navbar {
     font-family: "Roboto", Helvetica, Arial, sans-serif;
-    min-height: 50px;
+    min-height: 44px;
     margin-bottom: 0;
     border-top: none;
     border-bottom: none;
@@ -514,8 +529,9 @@ FOOTER AND COPYRIGHT
 .navbar-collapse {
     max-height: 340px;
     overflow-x: visible;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: right;
 }
 
 .navbar-collapse.in {
@@ -579,9 +595,10 @@ FOOTER AND COPYRIGHT
 
 .navbar-brand {
     float: left;
-    padding: 14px;
-    font-size: 17.5px;
+    padding: 12px;
+    font-size: 17px;
     line-height: 21px;
+    height: 44px;
 }
 
 .navbar-brand:hover,
@@ -614,8 +631,6 @@ FOOTER AND COPYRIGHT
 }
 
 .navbar-nav > li > a {
-    padding-top: 8.5px;
-    padding-bottom: 8.5px;
     line-height: 18px;
     border-bottom: none;
 }
@@ -629,7 +644,7 @@ FOOTER AND COPYRIGHT
 
     .navbar-nav .open .dropdown-menu > li > a,
     .navbar-nav .open .dropdown-menu .dropdown-header {
-        padding: 5px 15px 5px 25px;
+        padding: 7px 15px 7px 25px;
     }
 
     /* mobile menu dropdown center */
@@ -794,6 +809,7 @@ FOOTER AND COPYRIGHT
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #d7d5d9;
+        background-color: #282828;
     }
 
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
@@ -831,8 +847,7 @@ FOOTER AND COPYRIGHT
     z-index: 1000;
     font-size: 12px;
     background-color: #282828;
-    border: 1px solid #cccccc;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid #282828;
     border-radius: 0;
 }
 
@@ -943,7 +958,7 @@ hr {
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    padding: 6px 12px;
+    padding: 5px 11px;
     font-size: 14px;
     border-radius: 0;
 }
@@ -1007,7 +1022,7 @@ hr {
 
 /* dropdowns */
 .dropdown-menu > li > a {
-    padding: 8px 20px;
+    padding: 7.5px 18px;
 }
 
 /* labels */

@@ -50,7 +50,7 @@
                             <ul class="dropdown-menu">
                                 <li><a href="blog.html">Blog</a></li>
                                 <li class="active"><a href="#">Volunteer</a></li>
-                                <li><a target="_blank" href="https://goo.gl/forms/AeBk6ST8iEqxRUvL2">Suggestions</a></li>
+                                <li><a target="_blank" href="https://goo.gl/forms/AeBk6ST8iEqxRUvL2">Feedback</a></li>
                             </ul>
                         </li>
                         <li>
@@ -64,56 +64,99 @@
     </header>
 
     <style>
-        @media (min-width: 768px) {
-            .volunteer-jumbo {
-                background-image: url('img/volunteer/main.JPG');
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center;
+        .volunteer-jumbotron {
+            text-align: center;
+            background-color: #1e1e1e;
+            padding-bottom: 3%;
+        }
+
+        @media (max-width: 767px) {
+            #volunteer {
+                margin-top: 12%;
             }
+
+            .page-content {
+                padding: 15px;
+            }
+        }
+
+        .nav-tabs {
+            border-bottom: 0px solid #282828;
+        }
+
+        .nav-tabs>li>a {
+            border-radius: 4px 4px 0px 0px;
+        }
+
+        .nav-tabs>li>a:hover {
+            color: #3ba3c3;
+        }
+
+        .nav-tabs>li.active>a,
+        .nav-tabs>li.active>a:hover,
+        .nav-tabs>li.active>a:focus {
+            color: #ffffff;
+            background-color: #252525;
+            border: 1px solid #252525;
+        }
+
+        .footer {
+            z-index: 999;
         }
 
     </style>
 
-    <div class="main-jumbotron volunteer-jumbo">
-        <div class="container">
-            <h1 style="color: white">Volunteer With Us!</h1>
-            <h3 style="color: white">ACM-W X TechGirlz</h3>
-            <a target="_blank" href="https://goo.gl/forms/hIQqNtvVDvUv44Vi1" class="btn btn-white">Volunteer form</a>
+    <div class="volunteer-jumbotron">
+        <div id="volunteer" class="container" style="margin-bottom: 20px; padding-top: 5%;">
+            <h1 style="color: white;">Volunteer With Us!</h1>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#">TechGirlz</a></li>
+            </ul>
+
+            <div class="container page-content" style="border-radius: 0px 6px 6px 6px">
+                <h3 style="color: white;">ACM-W X TechGirlz</h3>
+                <p class="text-large">ACM-W is honored to partner with TechGirlz to host workshops to inspire young girls about the opportunities in technology! Volunteering is at the core of ACM-W at Temple University and we believe in doing our part to make our community better.</p><br>
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="padding-left: 0px;">
+                            <img data-src="img/volunteer/1.JPG" class="swiper-lazy img-responsive">
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img data-src="img/volunteer/2.JPG" class="swiper-lazy img-responsive">
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img data-src="img/volunteer/3.JPG" class="swiper-lazy img-responsive">
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img data-src="img/volunteer/4.JPG" class="swiper-lazy img-responsive">
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img data-src="img/volunteer/5.JPG" class="swiper-lazy img-responsive">
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img data-src="img/volunteer/6.JPG" class="swiper-lazy img-responsive">
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img data-src="img/volunteer/7.JPG" class="swiper-lazy img-responsive">
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <br>
+                <a target="_blank" href="https://goo.gl/forms/hIQqNtvVDvUv44Vi1" class="btn btn-white">TechGirlz form</a>
+            </div>
         </div>
+
     </div>
-
-    <section style="padding-bottom: 0px;">
-        <div class="container page-content rounded">
-            <div class="row center">
-                <div class="col-md-11">
-                    <img src="img/volunteer/techgirlz-logo.png" class="img-responsive">
-                    <p class="text-large">ACM-W is honored to partner with TechGirlz to host workshops to inspire young girls about the opportunities in technology! Volunteering is at the core of ACM-W at Temple University and we believe in doing our part to make our community better.</p><br>
-                </div>
-            </div>
-
-            <div class="scroll-container">
-                <div class="col-md-3 scroll-item">
-                    <img src="img/volunteer/1.jpg" class="img-responsive">
-                </div>
-                <div class="col-md-3 scroll-item">
-                    <img src="img/volunteer/1.jpg" class="img-responsive">
-                </div>
-                <div class="col-md-3 scroll-item">
-                    <img src="img/volunteer/1.jpg" class="img-responsive">
-                </div>
-                <div class="col-md-3 scroll-item">
-                    <img src="img/volunteer/1.jpg" class="img-responsive">
-                </div>
-                <div class="col-md-3 scroll-item">
-                    <img src="img/volunteer/1.jpg" class="img-responsive">
-                </div>
-                <div class="col-md-3 scroll-item">
-                    <img src="img/volunteer/1.jpg" class="img-responsive">
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section style="padding-bottom: 65px;">
         <div class="container page-content rounded">
@@ -182,15 +225,28 @@
     </section>
 
     <div class="footer">
-        <a class="text-large" target="_blank" href="https://goo.gl/forms/hIQqNtvVDvUv44Vi1">Sign up to volunteer!</a>
+        <a class="text-large" target="_blank" href="https://goo.gl/forms/hIQqNtvVDvUv44Vi1">Volunteer for TechGirlz!</a>
     </div>
 
     <!-- Font Awesome icon fonts-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="js/bootstrap.min.js"></script>
-    <script defer src="js/main.js"></script>
+    <script>
+        //collapse mobile menu when link is clicked
+        $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
+            $('.navbar-toggle:visible').click();
+        });
+        //scroll up by 100px when jumping to link/anchor from navbar
+        window.addEventListener("hashchange", function() {
+            window.scrollTo(window.scrollX, window.scrollY - 100);
+        });
+
+    </script>
     <script>
         (function(w, d) {
             var b = d.getElementsByTagName('body')[0];
@@ -203,6 +259,40 @@
             };
             b.appendChild(s);
         }(window, document));
+
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoHeight: true,
+            preLoadImages: false,
+            lazy: true,
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 20,
+            threshold: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            on: {
+                lazyImageReady: function() {
+                    swiper.updateAutoHeight();
+                }
+            },
+            breakpoints: {
+                // when window width is <= 767px
+                767: {
+                    lazy: {
+                        loadPrevNext: true,
+                        loadPrevNextAmount: 1
+                    },
+                    slidesPerView: 1,
+                    slidesPerGroup: 1
+                }
+            }
+        });
 
     </script>
 </body>

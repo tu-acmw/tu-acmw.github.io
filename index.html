@@ -121,27 +121,17 @@
                                 <div class="center">
                                     <div class="col-md-9 no-padding">
                                         <div class="image-ctn rounded">
-                                            <img data-src="img/events/fall_2018/11.05.18_homework-night.png" alt="" class="swiper-lazy img-responsive">
-                                            <div class="swiper-lazy-preloader"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="center">
-                                    <div class="col-md-9 no-padding">
-                                        <div class="image-ctn rounded">
-                                            <img data-src="img/events/fall_2018/11.26.18_thanksgiving-potluck.png" alt="" class="swiper-lazy img-responsive">
-                                            <div class="swiper-lazy-preloader"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="center">
-                                    <div class="col-md-9 no-padding">
-                                        <div class="image-ctn rounded">
                                             <img data-src="img/events/fall_2018/12.03.18_game-night.png" alt="" class="swiper-lazy img-responsive">
+                                            <div class="swiper-lazy-preloader"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="center">
+                                    <div class="col-md-9 no-padding">
+                                        <div class="image-ctn rounded">
+                                            <img data-src="img/events/spring_poster.png" alt="" class="swiper-lazy img-responsive">
                                             <div class="swiper-lazy-preloader"></div>
                                         </div>
                                     </div>
@@ -379,7 +369,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="js/bootstrap.min.js"></script>
@@ -409,35 +399,37 @@
 
     </script>
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            autoHeight: true,
-            preLoadImages: false,
-            lazy: true,
-            speed: 400,
-            threshold: 30,
-            spaceBetween: 30,
-            initialSlide: 2,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            on: {
-                lazyImageReady: function() {
-                    swiper.updateAutoHeight();
+        window.onload = function() {
+            var swiper = new Swiper('.swiper-container', {
+                loop: true,
+                autoHeight: true,
+                preLoadImages: false,
+                lazy: true,
+                speed: 400,
+                threshold: 30,
+                spaceBetween: 30,
+                initialSlide: 1,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
                 },
-                init: function() {
-                    checkArrow();
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
                 },
-                resize: function() {
-                    checkArrow();
+                on: {
+                    lazyImageReady: function() {
+                        swiper.updateAutoHeight();
+                    },
+                    init: function() {
+                        checkArrow();
+                    },
+                    resize: function() {
+                        checkArrow();
+                    }
                 }
-            }
-        });
+            });
+        }
 
         function checkArrow() {
             var swiperPrev = document.querySelector('.swiper-button-prev');

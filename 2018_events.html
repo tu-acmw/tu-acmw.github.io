@@ -31,7 +31,7 @@
                 <div class="navbar-header">
                     <a href="index.html" class="navbar-brand">ACM-W</a>
                     <div class="navbar-buttons">
-                        <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn"><i class="fas fa-align-justify"></i></button>
+                        <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn"><i class="fa fa-align-justify"></i></button>
                     </div>
                 </div>
                 <div id="navigation" class="collapse navbar-collapse navbar-right">
@@ -66,6 +66,40 @@
 
     <section class="bg-color padding-top-50">
         <div class="container">
+
+            <!-- November 2018 -->
+            <h3 class="lead heading-event">November 2018</h3>
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="center">
+                            <div class="col-md-9 no-padding">
+                                <div class="image-ctn rounded">
+                                    <img data-src="img/events/fall_2018/11.05.18_homework-night.png" alt="" class="swiper-lazy img-responsive">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="center">
+                            <div class="col-md-9 no-padding">
+                                <div class="image-ctn rounded">
+                                    <img data-src="img/events/fall_2018/11.26.18_thanksgiving-potluck.png" alt="" class="swiper-lazy img-responsive">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+                <div class="swiper-button-next swiper-button-white"></div>
+            </div>
+
             <!-- October 2018 -->
             <h3 class="lead heading-event"> October 2018</h3>
             <!-- Slider main container -->
@@ -286,7 +320,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="js/bootstrap.min.js"></script>
@@ -302,56 +336,58 @@
 
     </script>
     <script>
-        $(".swiper-container").each(function(index, element) {
-            var $this = $(this);
-            $this.addClass("instance-" + index);
-            $this.find(".swiper-button-prev").addClass("btn-prev-" + index);
-            $this.find(".swiper-button-next").addClass("btn-next-" + index);
-            var swiper = new Swiper(".instance-" + index, {
-                loop: true,
-                autoHeight: true,
-                preLoadImages: false,
-                lazy: true,
-                speed: 400,
-                threshold: 30,
-                spaceBetween: -120,
-                slidesPerView: 2,
-                slidesPerGroup: 2,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                on: {
-                    lazyImageReady: function() {
-                        swiper.updateAutoHeight();
+        window.onload = function() {
+            $(".swiper-container").each(function(index, element) {
+                var $this = $(this);
+                $this.addClass("instance-" + index);
+                $this.find(".swiper-button-prev").addClass("btn-prev-" + index);
+                $this.find(".swiper-button-next").addClass("btn-next-" + index);
+                var swiper = new Swiper(".instance-" + index, {
+                    loop: true,
+                    autoHeight: true,
+                    preLoadImages: false,
+                    lazy: true,
+                    speed: 400,
+                    threshold: 30,
+                    spaceBetween: -120,
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
                     },
-                    init: function() {
-                        checkArrow();
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
                     },
-                    resize: function() {
-                        checkArrow();
-                    }
-                },
-                breakpoints: {
-                    // when window width is <= 767px
-                    767: {
-                        lazy: {
-                            loadPrevNext: true,
-                            loadPrevNextAmount: 1
+                    on: {
+                        lazyImageReady: function() {
+                            swiper.updateAutoHeight();
                         },
-                        slidesPerView: 1,
-                        slidesPerGroup: 1,
-                        spaceBetween: 30
-                    }
-                },
-                nextButton: ".btn-next-" + index,
-                prevButton: ".btn-prev-" + index
+                        init: function() {
+                            checkArrow();
+                        },
+                        resize: function() {
+                            checkArrow();
+                        }
+                    },
+                    breakpoints: {
+                        // when window width is <= 767px
+                        767: {
+                            lazy: {
+                                loadPrevNext: true,
+                                loadPrevNextAmount: 1
+                            },
+                            slidesPerView: 1,
+                            slidesPerGroup: 1,
+                            spaceBetween: 30
+                        }
+                    },
+                    nextButton: ".btn-next-" + index,
+                    prevButton: ".btn-prev-" + index
+                });
             });
-        });
+        }
 
         function checkArrow() {
             var swiperPrev = document.querySelectorAll('.swiper-button-prev');

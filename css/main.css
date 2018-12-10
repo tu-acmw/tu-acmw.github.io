@@ -4,7 +4,7 @@ CUSTOM
 =====================
 */
 .bg-color {
-    background-color: rgb(78, 61, 112);
+    background-color: #802225;
 }
 
 .padding-top-55 {
@@ -16,19 +16,15 @@ CUSTOM
 }
 
 .about {
-    color: rgb(78, 61, 112);
+    color: #802225;
 }
 
-.about-sub-heading {
+.sub-heading-color {
     color: rgb(255, 219, 118);
 }
 
 .heading-color {
-    color: rgb(250, 162, 60);
-}
-
-.sub-heading-color {
-    color: #23d922;
+    color: #5cb59b;
 }
 
 .heading-event {
@@ -40,7 +36,13 @@ CUSTOM
 .page-content {
     padding: 30px;
     color: #d7d5d9;
-    background-color: #282828;
+    background-color: #232323;
+}
+
+.page-content-mini {
+    padding: 10px;
+    color: #d7d5d9;
+    background-color: #232323;
 }
 
 .center {
@@ -54,20 +56,6 @@ CUSTOM
     max-width: 165px;
     max-height: 165px;
     border-radius: 50%;
-}
-
-.hackathon {
-    background-color: #f2f2f2;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 20px;
-}
-
-@media (max-width: 767px) {
-    .hackathon {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
 }
 
 .image-ctn {
@@ -151,7 +139,7 @@ NAVBAR
 .navbar a.navbar-brand {
     font-weight: bold;
     letter-spacing: 0.2em;
-    color: rgb(250, 162, 60);
+    color: #5cb59b;
 }
 
 .navbar a.navbar-brand:focus,
@@ -323,8 +311,8 @@ a:hover {
 .btn-white:active,
 .btn-white.active,
 .open .dropdown-toggle.btn-white {
-    color: rgb(255, 219, 118);
-    border-color: rgb(255, 219, 118);
+    color: #5cb59b;
+    border-color: #5cb59b;
 }
 
 /*
@@ -341,7 +329,7 @@ p.social a {
     font-size: 15px;
     text-align: center;
     vertical-align: bottom;
-    color: rgb(78, 61, 112);
+    color: #802225;
     /*social icon color*/
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
@@ -395,7 +383,7 @@ FOOTER AND COPYRIGHT
 =====================
 */
 .footer__copyright {
-    background: #282828;
+    background: #232323;
     color: #ccc;
     padding: 10px 0;
     font-size: 12px;
@@ -648,8 +636,8 @@ FOOTER AND COPYRIGHT
 
     .navbar-nav .open .dropdown-menu > li > a:hover,
     .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: rgb(250, 162, 60) !important;
-        background-color: #282828 !important;
+        color: #5cb59b !important;
+        background-color: #232323 !important;
         background-image: none;
     }
 
@@ -755,14 +743,14 @@ FOOTER AND COPYRIGHT
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: rgb(250, 162, 60);
+    color: #5cb59b;
     background-color: transparent;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: rgb(250, 162, 60);
+    color: #5cb59b;
     background-color: transparent;
 }
 
@@ -794,18 +782,18 @@ FOOTER AND COPYRIGHT
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
     background-color: transparent;
-    color: rgb(250, 162, 60);
+    color: #5cb59b;
 }
 
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #d7d5d9;
-        background-color: #282828;
+        background-color: #232323;
     }
 
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: rgb(250, 162, 60);
+        color: #5cb59b;
         background-color: transparent;
     }
 
@@ -813,8 +801,8 @@ FOOTER AND COPYRIGHT
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-        color: rgb(250, 162, 60);
-        background-color: #282828;
+        color: #5cb59b;
+        background-color: #232323;
     }
 
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
@@ -830,15 +818,15 @@ FOOTER AND COPYRIGHT
 }
 
 .navbar-default .navbar-link:hover {
-    color: rgb(250, 162, 60);
+    color: #5cb59b;
 }
 
 /* dropdowns */
 .dropdown-menu {
     z-index: 1000;
     font-size: 12px;
-    background-color: #282828;
-    border: 1px solid #282828;
+    background-color: #232323;
+    border: 1px solid #232323;
     border-radius: 0;
 }
 
@@ -857,14 +845,14 @@ FOOTER AND COPYRIGHT
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-    color: rgb(250, 162, 60);
+    color: #5cb59b;
     background-color: transparent;
 }
 
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-    color: rgb(250, 162, 60);
+    color: #5cb59b;
     background-color: transparent;
 }
 
@@ -874,17 +862,17 @@ body {
     font-size: 14px;
     line-height: 1.55;
     color: #000000;
-    background-color: rgb(78, 61, 112);
+    background-color: #802225;
 }
 
 a {
-    color: #3ba3c3;
+    color: #0b82a5;
     text-decoration: none;
 }
 
 a:hover,
 a:focus {
-    color: #0b82a5;
+    color: #097090;
     text-decoration: none;
 }
 
@@ -901,7 +889,7 @@ a:focus {
 hr {
     width: 90%;
     height: 3px;
-    border-top: 4px solid rgb(78, 61, 112) !important;
+    border-top: 4px solid #802225 !important;
 }
 
 /* breadcrumbs */
@@ -1016,8 +1004,8 @@ hr {
 }
 
 #signUpSubmit {
-    border: 1px solid #17af16;
-    background-color: #303030;
+    border: 1px solid #5cb59b;
+    background-color: #292929;
     color: #d1d1d1;
     padding-bottom: 2px;
     padding-top: 5px;
@@ -1031,14 +1019,14 @@ hr {
 
 #signUpSubmit:hover,
 #signUpSubmit:focus .fa-power-off {
-    color: #18c117;
+    color: #5cb59b;
 }
 
 .form-control {
     color: rgb(255, 219, 118);
-    background-color: rgb(78, 61, 112);
+    background-color: #802225;
     background-image: none;
-    border: 1px solid #17af16;
+    border: 1px solid #5cb59b;
     border-radius: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -1242,15 +1230,11 @@ blockquote.pull-right {
 
 .panel {
     margin-bottom: 21px;
-    background-color: #303030;
+    background-color: #292929;
     border: 0px solid transparent;
     border-radius: 0;
     overflow: hidden;
     color: #d7d5d9;
-}
-
-.panel-icon {
-    color: #23d922;
 }
 
 .panel-title {
@@ -1286,14 +1270,13 @@ blockquote.pull-right {
 
 .panel-default > .panel-heading {
     color: #333333;
-    background-color: #282828;
+    background-color: #232323;
     border-color: #666666;
     cursor: pointer;
 }
 
 .panel-default > .panel-heading + .panel-collapse .panel-body {
-    border-top-color: #17af16;
-    /* green */
+    border-top-color: #5cb59b;
 }
 
 .panel-default > .panel-footer + .panel-collapse .panel-body {

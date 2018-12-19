@@ -335,13 +335,19 @@
 
     </script>
     <script>
+        // when window width is <= 767px
+        let bp767 = {
+            lazy: {
+                loadPrevNext: true,
+                loadPrevNextAmount: 1
+            },
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 30
+        }
         window.onload = function() {
             $(".swiper-container").each(function(index, element) {
-                var $this = $(this);
-                $this.addClass("instance-" + index);
-                $this.find(".swiper-button-prev").addClass("btn-prev-" + index);
-                $this.find(".swiper-button-next").addClass("btn-next-" + index);
-                var swiper = new Swiper(".instance-" + index, {
+                let options = {
                     loop: true,
                     autoHeight: true,
                     preLoadImages: false,
@@ -371,20 +377,30 @@
                         }
                     },
                     breakpoints: {
-                        // when window width is <= 767px
-                        767: {
-                            lazy: {
-                                loadPrevNext: true,
-                                loadPrevNextAmount: 1
-                            },
-                            slidesPerView: 1,
-                            slidesPerGroup: 1,
-                            spaceBetween: 30
-                        }
+                        767: bp767
                     },
                     nextButton: ".btn-next-" + index,
                     prevButton: ".btn-prev-" + index
-                });
+                }
+
+                var $this = $(this);
+                // hide paging if there are only <=2 slides
+                if ($this.find('.swiper-slide').length <= 2) {
+                    options.pagination = {};
+                    options.loop = false;
+                    bp767.pagination = {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    }
+                    bp767.loop = true;
+                    options.breakpoints = {
+                        767: bp767
+                    };
+                }
+                $this.addClass("instance-" + index);
+                $this.find(".swiper-button-prev").addClass("btn-prev-" + index);
+                $this.find(".swiper-button-next").addClass("btn-next-" + index);
+                var swiper = new Swiper(".instance-" + index, options);
             });
         }
 

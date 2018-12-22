@@ -361,10 +361,6 @@
                         el: '.swiper-pagination',
                         clickable: true,
                     },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
                     on: {
                         lazyImageReady: function() {
                             swiper.updateAutoHeight();
@@ -378,9 +374,7 @@
                     },
                     breakpoints: {
                         767: bp767
-                    },
-                    nextButton: ".btn-next-" + index,
-                    prevButton: ".btn-prev-" + index
+                    }
                 }
 
                 var $this = $(this);
@@ -396,14 +390,23 @@
                     options.breakpoints = {
                         767: bp767
                     };
+                } else {
+                    //add navigation arrows for >2 slides
+                    options.navigation = {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    };
+                    options.nextButton = ".btn-next-" + index;
+                    options.prevButton = ".btn-prev-" + index;
+                    $this.find(".swiper-button-prev").addClass("btn-prev-" + index);
+                    $this.find(".swiper-button-next").addClass("btn-next-" + index);
                 }
                 $this.addClass("instance-" + index);
-                $this.find(".swiper-button-prev").addClass("btn-prev-" + index);
-                $this.find(".swiper-button-next").addClass("btn-next-" + index);
                 var swiper = new Swiper(".instance-" + index, options);
             });
         }
 
+        //show navigation arrows for laptop, hide them for mobile
         function checkArrow() {
             var swiperPrev = document.querySelectorAll('.swiper-button-prev');
             var swiperNext = document.querySelectorAll('.swiper-button-next');

@@ -33,6 +33,15 @@ CUSTOM
     color: rgb(255, 219, 118);
 }
 
+.heading-event-2 {
+    font-family: arial;
+    font-size: 200% !important;
+    color: rgb(255, 219, 118);
+    background-color: #232323;
+    padding: 10px;
+    border-radius: 4px;
+}
+
 .page-content {
     padding: 30px;
     color: #d7d5d9;
@@ -866,13 +875,13 @@ body {
 }
 
 a {
-    color: #0b82a5;
+    color: #93cbeb;
     text-decoration: none;
 }
 
 a:hover,
 a:focus {
-    color: #097090;
+    color: #68b6e3;
     text-decoration: none;
 }
 

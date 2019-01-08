@@ -1,0 +1,24 @@
+{
+  "name": "tu-acmw.github.io",
+  "version": "1.0.0",
+  "description": "Temple University's ACM-W Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tu-acmw/tu-acmw.github.io.git"
+  },
+  "author": "Hana Xu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tu-acmw/tu-acmw.github.io/issues"
+  },
+  "homepage": "https://github.com/tu-acmw/tu-acmw.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}

@@ -18,7 +18,13 @@
   "homepage": "https://github.com/tu-acmw/tu-acmw.github.io#readme",
   "devDependencies": {
     "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
     "gulp": "^4.0.0",
-    "gulp-sass": "^4.0.2"
-  }
+    "gulp-clean-css": "^4.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-tinypng-unlimited": "^1.0.3",
+    "vinyl-paths": "^2.1.0"
+  },
+  "dependencies": {}
 }

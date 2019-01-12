@@ -3,8 +3,14 @@
 CUSTOM
 =====================
 */
+$primary-color: #802225;
+$secondary-color: #232323;
+$accent-color: #5cb59b;
+$heading-color: rgb(255, 219, 118);
+$text-color: #d7d5d9;
+
 .bg-color {
-    background-color: #802225;
+    background-color: $primary-color;
 }
 
 .padding-top-55 {
@@ -16,42 +22,42 @@ CUSTOM
 }
 
 .about {
-    color: #802225;
+    color: $primary-color;
 }
 
 .sub-heading-color {
-    color: rgb(255, 219, 118);
+    color: $heading-color;
 }
 
 .heading-color {
-    color: #5cb59b;
+    color: $accent-color;
 }
 
 .heading-event {
     font-family: arial;
     font-size: 200% !important;
-    color: rgb(255, 219, 118);
+    color: $heading-color;
 }
 
 .heading-event-2 {
     font-family: arial;
     font-size: 200% !important;
-    color: rgb(255, 219, 118);
-    background-color: #232323;
+    color: $heading-color;
+    background-color: $secondary-color;
     padding: 10px;
     border-radius: 4px;
 }
 
 .page-content {
     padding: 30px;
-    color: #d7d5d9;
-    background-color: #232323;
+    color: $text-color;
+    background-color: $secondary-color;
 }
 
 .page-content-mini {
     padding: 10px;
-    color: #d7d5d9;
-    background-color: #232323;
+    color: $text-color;
+    background-color: $secondary-color;
 }
 
 .center {
@@ -68,7 +74,6 @@ CUSTOM
 }
 
 .image-ctn {
-    background-color: #f2f2f2;
     margin-bottom: 30px;
 }
 
@@ -122,13 +127,13 @@ SWIPER
 .swiper-pagination-bullet {
     width: 11px !important;
     height: 11px !important;
-    border: 1px solid rgb(255, 219, 118);
+    border: 1px solid $heading-color;
     background: none !important;
     opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
-    background: rgb(255, 219, 118) !important;
+    background: $heading-color !important;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
@@ -148,7 +153,7 @@ NAVBAR
 .navbar a.navbar-brand {
     font-weight: bold;
     letter-spacing: 0.2em;
-    color: #5cb59b;
+    color: $accent-color;
 }
 
 .navbar a.navbar-brand:focus,
@@ -210,7 +215,6 @@ html {
 body {
     text-align: center;
     height: 100%;
-    background-color: #222222;
 }
 
 header {
@@ -289,19 +293,9 @@ a:hover {
 }
 
 .btn-white {
-    color: #d7d5d9;
+    color: $text-color;
     background-color: transparent;
-    border-color: #d7d5d9;
-}
-
-.btn-white:hover,
-.btn-white:focus,
-.btn-white:active,
-.btn-white.active,
-.open .dropdown-toggle.btn-white {
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0);
-    border-color: #e0e0e0;
+    border-color: $text-color;
 }
 
 .btn-white:active,
@@ -310,18 +304,13 @@ a:hover {
     background-image: none;
 }
 
-.btn-white .badge {
-    color: transparent;
-    background-color: #ffffff;
-}
-
 .btn-white:hover,
 .btn-white:focus,
 .btn-white:active,
 .btn-white.active,
 .open .dropdown-toggle.btn-white {
-    color: #5cb59b;
-    border-color: #5cb59b;
+    color: $accent-color;
+    border-color: $accent-color;
 }
 
 /*
@@ -338,7 +327,7 @@ p.social a {
     font-size: 15px;
     text-align: center;
     vertical-align: bottom;
-    color: #802225;
+    color: $primary-color;
     /*social icon color*/
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
@@ -347,7 +336,7 @@ p.social a {
 
 p.social a:hover {
     text-decoration: none;
-    color: rgb(255, 244, 133);
+    color: $heading-color;
     /* social icon hover */
 }
 
@@ -372,7 +361,6 @@ p.social.social--big a {
     position: relative;
     padding-top: 80px;
     padding-bottom: 80px;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
     text-align: center;
     background-color: #1e1e1e;
 }
@@ -392,8 +380,7 @@ FOOTER AND COPYRIGHT
 =====================
 */
 .footer__copyright {
-    background: #232323;
-    color: #ccc;
+    background: $secondary-color;
     padding: 10px 0;
     font-size: 12px;
     font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -432,15 +419,6 @@ FOOTER AND COPYRIGHT
 .nav > li > a:hover,
 .nav > li > a:focus {
     background-color: #eeeeee;
-}
-
-.nav > li.disabled > a {
-    color: #999999;
-}
-
-.nav > li.disabled > a:hover,
-.nav > li.disabled > a:focus {
-    color: #999999;
 }
 
 .nav .open > a,
@@ -645,13 +623,13 @@ FOOTER AND COPYRIGHT
 
     .navbar-nav .open .dropdown-menu > li > a:hover,
     .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #5cb59b !important;
-        background-color: #232323 !important;
+        color: $accent-color !important;
+        background-color: $secondary-color !important;
         background-image: none;
     }
 
     .navbar-nav .open .dropdown-menu > li:active {
-        background-color: #3ba3c3 !important;
+        background-color: $accent-color !important;
     }
 }
 
@@ -697,7 +675,7 @@ FOOTER AND COPYRIGHT
     margin-top: 5px;
     margin-bottom: 3px;
     margin-right: 5px;
-    color: #d7d5d9;
+    color: $text-color;
 }
 
 .navbar-btn.btn-sm {
@@ -732,13 +710,9 @@ FOOTER AND COPYRIGHT
     border-bottom-color: transparent;
 }
 
-.navbar-default .navbar-brand {
-    color: #000000;
-}
-
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: #d7d5d9;
+    color: $text-color;
     background-color: transparent;
 }
 
@@ -747,19 +721,19 @@ FOOTER AND COPYRIGHT
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #d7d5d9;
+    color: $text-color;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #5cb59b;
+    color: $accent-color;
     background-color: transparent;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #5cb59b;
+    color: $accent-color;
     background-color: transparent;
 }
 
@@ -791,18 +765,18 @@ FOOTER AND COPYRIGHT
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
     background-color: transparent;
-    color: #5cb59b;
+    color: $accent-color;
 }
 
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #d7d5d9;
-        background-color: #232323;
+        color: $text-color;
+        background-color: $secondary-color;
     }
 
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #5cb59b;
+        color: $accent-color;
         background-color: transparent;
     }
 
@@ -810,15 +784,8 @@ FOOTER AND COPYRIGHT
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-        color: #5cb59b;
-        background-color: #232323;
-    }
-
-    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
-    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-        color: #cccccc;
-        background-color: transparent;
+        color: $accent-color;
+        background-color: $secondary-color;
     }
 }
 
@@ -827,15 +794,15 @@ FOOTER AND COPYRIGHT
 }
 
 .navbar-default .navbar-link:hover {
-    color: #5cb59b;
+    color: $accent-color;
 }
 
 /* dropdowns */
 .dropdown-menu {
     z-index: 1000;
     font-size: 12px;
-    background-color: #232323;
-    border: 1px solid #232323;
+    background-color: $secondary-color;
+    border: 1px solid $secondary-color;
     border-radius: 0;
 }
 
@@ -849,19 +816,19 @@ FOOTER AND COPYRIGHT
 .dropdown-menu > li > a {
     font-family: arial;
     line-height: 1.55;
-    color: #d7d5d9;
+    color: $text-color;
 }
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-    color: #5cb59b;
+    color: $accent-color;
     background-color: transparent;
 }
 
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-    color: #5cb59b;
+    color: $accent-color;
     background-color: transparent;
 }
 
@@ -871,7 +838,7 @@ body {
     font-size: 14px;
     line-height: 1.55;
     color: #000000;
-    background-color: #802225;
+    background-color: $primary-color;
 }
 
 a {
@@ -898,7 +865,7 @@ a:focus {
 hr {
     width: 90%;
     height: 3px;
-    border-top: 4px solid #802225 !important;
+    border-top: 4px solid $primary-color !important;
 }
 
 /* breadcrumbs */
@@ -1013,7 +980,7 @@ hr {
 }
 
 #signUpSubmit {
-    border: 1px solid #5cb59b;
+    border: 1px solid $accent-color;
     background-color: #292929;
     color: #d1d1d1;
     padding-bottom: 2px;
@@ -1028,14 +995,14 @@ hr {
 
 #signUpSubmit:hover,
 #signUpSubmit:focus .fa-power-off {
-    color: #5cb59b;
+    color: $accent-color;
 }
 
 .form-control {
-    color: rgb(255, 219, 118);
-    background-color: #802225;
+    color: $heading-color;
+    background-color: $primary-color;
     background-image: none;
-    border: 1px solid #5cb59b;
+    border: 1px solid $accent-color;
     border-radius: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -1051,7 +1018,7 @@ hr {
 }
 
 .form-control::-webkit-input-placeholder {
-    color: #d7d5d9;
+    color: $text-color;
     /* placeholder text color */
 }
 
@@ -1243,14 +1210,14 @@ blockquote.pull-right {
     border: 0px solid transparent;
     border-radius: 0;
     overflow: hidden;
-    color: #d7d5d9;
+    color: $text-color;
 }
 
 .panel-title {
     font-weight: normal;
     padding-left: 6px;
     text-align: left;
-    color: #d7d5d9;
+    color: $text-color;
     line-height: 1.5;
 }
 
@@ -1279,13 +1246,13 @@ blockquote.pull-right {
 
 .panel-default > .panel-heading {
     color: #333333;
-    background-color: #232323;
+    background-color: $secondary-color;
     border-color: #666666;
     cursor: pointer;
 }
 
 .panel-default > .panel-heading + .panel-collapse .panel-body {
-    border-top-color: #5cb59b;
+    border-top-color: $accent-color;
 }
 
 .panel-default > .panel-footer + .panel-collapse .panel-body {

@@ -6,11 +6,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124568663-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         
-         gtag('config', 'UA-124568663-1');
-	</script>
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-124568663-1');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,7 +31,8 @@
                 <div class="navbar-header">
                     <a href="index.html" class="navbar-brand">ACM-W</a>
                     <div class="navbar-buttons">
-                        <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn"><i class="fa fa-align-justify"></i></button>
+                        <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn"><i
+                                class="fa fa-align-justify"></i></button>
                     </div>
                 </div>
                 <div id="navigation" class="collapse navbar-collapse navbar-right">
@@ -67,6 +68,26 @@
     <section class="bg-color padding-top-50">
         <div class="container">
 
+            <!-- December 2018 -->
+            <h3 class="lead heading-event-2">December 2018</h3>
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="center">
+                            <div class="col-md-9 no-padding">
+                                <div class="image-ctn rounded">
+                                    <img data-src="img/events/fall_2018/12.03.18_game-night.png" alt="" class="swiper-lazy img-responsive">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- November 2018 -->
             <h3 class="lead heading-event-2">November 2018</h3>
             <!-- Slider main container -->
@@ -96,6 +117,22 @@
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
+            </div>
+            <div class="row center">
+                <div class="col-md-4">
+                    <p class="lead heading-event" style="margin-top: 0px;">Hackathons</p>
+                    <div class="row center">
+                        <div class="col-md-11 col-sm-6 no-padding">
+                            <div class="page-content-mini rounded margin-bottom">
+                                <h4 class="lead-h heading-color">Technica 2018</h4>
+                                <p class="text-md"><i class="fa fa-calendar"></i> Nov. 10th - 11th, 2018<br>
+                                    <i class="fa fa-map-marker"></i> University of Maryland<br>
+                                    <i class="fa fa-bus"></i> Bus: Nov. 9th, 5:30PM, Tuttleman<br>
+                                    <i class="fa fa-globe"></i> <a target="_blank" href="https://gotechnica.org">gotechnica.org</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- October 2018 -->
@@ -245,7 +282,8 @@
                         <div class="center">
                             <div class="col-md-9 no-padding">
                                 <div class="image-ctn rounded">
-                                    <img data-src="img/events/spring_2018/4.2.18_easter_scavenger_hunt.png" alt="" class="swiper-lazy img-responsive">
+                                    <img data-src="img/events/spring_2018/4.2.18_easter_scavenger_hunt.png" alt=""
+                                        class="swiper-lazy img-responsive">
                                     <div class="swiper-lazy-preloader"></div>
                                 </div>
                             </div>
@@ -272,7 +310,8 @@
                                     <div class="swiper-lazy-preloader"></div>
                                     <h4 class="lead sub-heading-color">Grace Hopper Scholarship Essay Workshop 2</h4>
                                     <p class="text-md" style="padding-left: 6px; padding-right: 6px;">
-                                        Use these <a href="http://bit.ly/2smq9kc">slides</a> as a guide when applying to Grace Hopper Scholarships in 2018 and beyond.
+                                        Use these <a href="http://bit.ly/2smq9kc">slides</a> as a guide when applying
+                                        to Grace Hopper Scholarships in 2018 and beyond.
                                         Slides are not limited to this event.
                                     </p>
                                 </div>
@@ -292,7 +331,8 @@
                     <div class="swiper-slide">
                         <div class="center">
                             <div class="col-md-9 no-padding">
-                                <div class="image-ctn rounded"><img data-src="img/events/spring_2018/2.12.18_ghcWorkshop1.png" alt="" class="swiper-lazy img-responsive"></div>
+                                <div class="image-ctn rounded"><img data-src="img/events/spring_2018/2.12.18_ghcWorkshop1.png"
+                                        alt="" class="swiper-lazy img-responsive"></div>
                                 <div class="swiper-lazy-preloader"></div>
                             </div>
 
@@ -301,7 +341,8 @@
                     <div class="swiper-slide">
                         <div class="center">
                             <div class="col-md-9 no-padding">
-                                <div class="image-ctn rounded"><img data-src="img/events/spring_2018/1.2.18_femmehacks.png" alt="" class="swiper-lazy img-responsive"></div>
+                                <div class="image-ctn rounded"><img data-src="img/events/spring_2018/1.2.18_femmehacks.png"
+                                        alt="" class="swiper-lazy img-responsive"></div>
                                 <div class="swiper-lazy-preloader"></div>
                             </div>
                         </div>
@@ -325,14 +366,13 @@
     <script defer src="js/snowstorm.min.js"></script>
     <script>
         //collapse mobile menu when link is clicked
-        $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
+        $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function () {
             $('.navbar-toggle:visible').click();
         });
         //scroll up by 100px when jumping to link/anchor from navbar
-        window.addEventListener("hashchange", function() {
+        window.addEventListener("hashchange", function () {
             window.scrollTo(window.scrollX, window.scrollY - 100);
         });
-
     </script>
     <script>
         // when window width is <= 767px
@@ -345,8 +385,8 @@
             slidesPerGroup: 1,
             spaceBetween: 30
         }
-        window.onload = function() {
-            $(".swiper-container").each(function(index, element) {
+        window.onload = function () {
+            $(".swiper-container").each(function (index, element) {
                 let options = {
                     loop: true,
                     autoHeight: true,
@@ -362,13 +402,13 @@
                         clickable: true,
                     },
                     on: {
-                        lazyImageReady: function() {
+                        lazyImageReady: function () {
                             swiper.updateAutoHeight();
                         },
-                        init: function() {
+                        init: function () {
                             checkArrow();
                         },
-                        resize: function() {
+                        resize: function () {
                             checkArrow();
                         }
                     },
@@ -390,6 +430,9 @@
                     options.breakpoints = {
                         767: bp767
                     };
+                    if ($this.find('.swiper-slide').length <= 1) {
+                        options.centeredSlides = true;
+                    }
                 } else {
                     //add navigation arrows for >2 slides
                     options.navigation = {
@@ -405,7 +448,6 @@
                 var swiper = new Swiper(".instance-" + index, options);
             });
         }
-
         //show navigation arrows for laptop, hide them for mobile
         function checkArrow() {
             var swiperPrev = document.querySelectorAll('.swiper-button-prev');
@@ -418,7 +460,6 @@
                 swiperNext.forEach(el => el.style.display = 'none');
             }
         }
-
     </script>
 </body>
 

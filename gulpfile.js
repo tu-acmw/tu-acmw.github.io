@@ -26,11 +26,11 @@ gulp.task('minify-css', function() {
 });
 
 //optimize images
-gulp.task('optimize-imgs', () => {
-    return gulp.src('img/events/unoptimized/*.@(png|jpg|JPG|jpeg)')
+gulp.task('compress-imgs', () => {
+    return gulp.src('img/unoptimized-imgs/*.@(png|jpg|JPG|jpeg)')
       .pipe(tinify())
       .pipe(vinylPaths(del)) //delete the unoptimized images afterwards
-      .pipe(gulp.dest('img/events/'));
+      .pipe(gulp.dest('img/'));
   });
 
 //create a server and watch for file changes

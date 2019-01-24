@@ -1,1 +1,5 @@
 node_modules
+img/events/unoptimized-imgs/*.png
+img/events/unoptimized-imgs/*.jpg
+img/events/unoptimized-imgs/*.JPG
+img/events/unoptimized-imgs/*.jpeg

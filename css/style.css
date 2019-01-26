@@ -300,10 +300,9 @@ p.social a i {
   line-height: 40px; }
 
 p.social.social--big a {
-  margin: 0 10px 10px 0;
+  margin: 0 5px 5px 0;
   width: 40px;
-  height: 50px;
-  line-height: 50px;
+  height: 40px;
   font-size: 20px; }
 
 /* jumbotron */

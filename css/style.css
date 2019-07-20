@@ -52,9 +52,10 @@ CUSTOM
 .profile {
   overflow: hidden;
   max-width: 165px;
-  max-height: 165px;
   border-radius: 50%; }
-
+.col-md-2 > a{
+  font-size: 10pt;
+}
 .image-ctn {
   margin-bottom: 30px;
   background: #232323;
@@ -675,7 +676,7 @@ FOOTER AND COPYRIGHT
 .dropdown-menu > .active > a:focus {
   color: #5cb59b;
   background-color: transparent; }
-
+  
 /* scaffolding */
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -886,7 +887,7 @@ h3,
 
 h4,
 .h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700; }
 
 h5,
@@ -917,7 +918,6 @@ h5,
 
 p {
   margin: 0 0 15px; }
-
 .lead, .lead-h {
   margin-top: 15px;
   margin-bottom: 16px;

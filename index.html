@@ -442,16 +442,6 @@
     <script defer src="js/bootstrap.min.js"></script>
     <!--<script defer src="js/snowstorm.min.js"></script>-->
     <script>
-        //collapse mobile menu when link is clicked
-        $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function () {
-            $('.navbar-toggle:visible').click();
-        });
-        //scroll up by 100px when jumping to link/anchor from navbar
-        window.addEventListener("hashchange", function () {
-            window.scrollTo(window.scrollX, window.scrollY - 100);
-        });
-    </script>
-    <script>
         (function (w, d) {
             var b = d.getElementsByTagName('body')[0];
             var s = d.createElement("script");
